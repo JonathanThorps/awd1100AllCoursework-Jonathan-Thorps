@@ -1,8 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Please Enter a Word");
 
-String text = Console.ReadLine();
+String word = Console.ReadLine();
 int StartIndex = 0;
 int Length = 1;
-
-Console.WriteLine("{0}");
+string substring = word.Substring(0,1);
+string wordMinusFirstChar = word.Substring(1);
+Console.WriteLine("{0}{1}ay",wordMinusFirstChar,substring);
