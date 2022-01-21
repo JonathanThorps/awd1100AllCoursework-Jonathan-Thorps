@@ -32,13 +32,13 @@
             this.btnPaper = new System.Windows.Forms.Button();
             this.btnScissors = new System.Windows.Forms.Button();
             this.playerChoice = new System.Windows.Forms.Label();
-            this.computerChoice = new System.Windows.Forms.Label();
+            this.lblComputerChoice = new System.Windows.Forms.Label();
             this.roundResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRock
             // 
-            this.btnRock.Location = new System.Drawing.Point(196, 187);
+            this.btnRock.Location = new System.Drawing.Point(182, 75);
             this.btnRock.Name = "btnRock";
             this.btnRock.Size = new System.Drawing.Size(99, 47);
             this.btnRock.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             // btnPaper
             // 
-            this.btnPaper.Location = new System.Drawing.Point(348, 187);
+            this.btnPaper.Location = new System.Drawing.Point(334, 75);
             this.btnPaper.Name = "btnPaper";
             this.btnPaper.Size = new System.Drawing.Size(98, 47);
             this.btnPaper.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // btnScissors
             // 
-            this.btnScissors.Location = new System.Drawing.Point(503, 187);
+            this.btnScissors.Location = new System.Drawing.Point(489, 75);
             this.btnScissors.Name = "btnScissors";
             this.btnScissors.Size = new System.Drawing.Size(96, 47);
             this.btnScissors.TabIndex = 2;
@@ -69,23 +69,23 @@
             // playerChoice
             // 
             this.playerChoice.AutoSize = true;
-            this.playerChoice.Location = new System.Drawing.Point(196, 281);
+            this.playerChoice.Location = new System.Drawing.Point(182, 169);
             this.playerChoice.Name = "playerChoice";
             this.playerChoice.Size = new System.Drawing.Size(0, 15);
             this.playerChoice.TabIndex = 3;
             // 
-            // computerChoice
+            // lblComputerChoice
             // 
-            this.computerChoice.AutoSize = true;
-            this.computerChoice.Location = new System.Drawing.Point(503, 281);
-            this.computerChoice.Name = "computerChoice";
-            this.computerChoice.Size = new System.Drawing.Size(0, 15);
-            this.computerChoice.TabIndex = 4;
+            this.lblComputerChoice.AutoSize = true;
+            this.lblComputerChoice.Location = new System.Drawing.Point(489, 169);
+            this.lblComputerChoice.Name = "lblComputerChoice";
+            this.lblComputerChoice.Size = new System.Drawing.Size(0, 15);
+            this.lblComputerChoice.TabIndex = 4;
             // 
             // roundResult
             // 
             this.roundResult.AutoSize = true;
-            this.roundResult.Location = new System.Drawing.Point(199, 343);
+            this.roundResult.Location = new System.Drawing.Point(182, 231);
             this.roundResult.Name = "roundResult";
             this.roundResult.Size = new System.Drawing.Size(0, 15);
             this.roundResult.TabIndex = 5;
@@ -96,7 +96,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.roundResult);
-            this.Controls.Add(this.computerChoice);
+            this.Controls.Add(this.lblComputerChoice);
             this.Controls.Add(this.playerChoice);
             this.Controls.Add(this.btnScissors);
             this.Controls.Add(this.btnPaper);
@@ -114,7 +114,7 @@
         private Button btnPaper;
         private Button btnScissors;
         private Label playerChoice;
-        private Label computerChoice;
+        private Label lblComputerChoice;
         private Label roundResult;
     }
 }

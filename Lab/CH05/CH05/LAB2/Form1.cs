@@ -15,19 +15,19 @@ namespace LAB2
 
                 categoryOut.Text = String.Format("Category 5");
 
-            else if (windSpeed >= 130 && windSpeed < 157)
+            else if (windSpeed >= 130)
 
                 categoryOut.Text = String.Format("Category 4");
 
-            else if (windSpeed >= 111 && windSpeed < 130)
+            else if (windSpeed >= 111)
 
                 categoryOut.Text = String.Format("Category 3");
 
-            else if (windSpeed >= 96 && windSpeed < 111)
+            else if (windSpeed >= 96)
 
                 categoryOut.Text = String.Format("Category 2");
 
-            else if (windSpeed >= 74 && windSpeed < 96)
+            else if (windSpeed >= 74)
 
                 categoryOut.Text = String.Format("Category 1");
 

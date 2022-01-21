@@ -8,60 +8,65 @@ namespace LAB3
             InitializeComponent();
         }
 
-        Random myRandomGame = new Random();
+        Random number = new Random();
 
-        int rockPaperScissors = myRandomGame.Next(1, 4);
-
-
+        int rounds = 1;
+       
         private void btnRock_Click(object sender, EventArgs e)
         {
             playerChoice.Text = String.Format("Player chooses Rock");
 
-            if (myRandomGame.Next(1, rockPaperScissors) == 1)
+            int computerChoice = number.Next(1, 4);
+            
+            if (computerChoice == 1)
 
-                computerChoice.Text = String.Format("Computer chooses Rock");
+                lblComputerChoice.Text = String.Format("Computer chooses Rock");
 
-            else if (myRandomGame.Next(1, rockPaperScissors) == 2)
+            else if (computerChoice == 2)
 
-                computerChoice.Text = String.Format("Computer chooses Paper");
+                lblComputerChoice.Text = String.Format("Computer chooses Paper");
 
-            else (myRandomGame.Next(1, rockPaperScissors) == 3)
+            else
 
-                    computerChoice.Text = String.Format("Computer chooses Scissors");
+               lblComputerChoice.Text = String.Format("Computer chooses Scissors");
         }
 
         private void btnPaper_Click(object sender, EventArgs e)
         {
             playerChoice.Text = String.Format("Player chooses Paper");
 
-            if (myRandomGame.Next(1, rockPaperScissors) == 1)
+            int computerChoice = number.Next(1, 4);
 
-                computerChoice.Text = String.Format("Computer chooses Rock");
+            if (computerChoice == 1)
 
-            else if (myRandomGame.Next(1, rockPaperScissors) == 2)
+                lblComputerChoice.Text = String.Format("Computer chooses Rock");
 
-                computerChoice.Text = String.Format("Computer chooses Paper");
+            else if (computerChoice == 2)
 
-            else (myRandomGame.Next(1, rockPaperScissors) == 3)
+                lblComputerChoice.Text = String.Format("Computer chooses Paper");
 
-                    computerChoice.Text = String.Format("Computer chooses Scissors");
+            else
+
+                lblComputerChoice.Text = String.Format("Computer chooses Scissors");
         }
 
         private void btnScissors_Click(object sender, EventArgs e)
         {
             playerChoice.Text = String.Format("Player chooses Scissors");
 
-            if (myRandomGame.Next(1, rockPaperScissors) == 1)
+            int computerChoice = number.Next(1, 4);
 
-                computerChoice.Text = String.Format("Computer chooses Rock");
+            if (computerChoice == 1)
 
-            else if (myRandomGame.Next(1, rockPaperScissors) == 2)
+                lblComputerChoice.Text = String.Format("Computer chooses Rock");
 
-                computerChoice.Text = String.Format("Computer chooses Paper");
+            else if (computerChoice == 2)
 
-            else (myRandomGame.Next(1, rockPaperScissors) == 3)
+                lblComputerChoice.Text = String.Format("Computer chooses Paper");
 
-                    computerChoice.Text = String.Format("Computer chooses Scissors");
+            else
+
+                lblComputerChoice.Text = String.Format("Computer chooses Scissors");
         }
     }
 }
