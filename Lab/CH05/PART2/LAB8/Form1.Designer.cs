@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.highSaleOutput = new System.Windows.Forms.Label();
-            this.danielleBtn = new System.Windows.Forms.Button();
-            this.edwardBtn = new System.Windows.Forms.Button();
-            this.francisBtn = new System.Windows.Forms.Button();
-            this.saleBox = new System.Windows.Forms.TextBox();
-            this.daniSalesBox = new System.Windows.Forms.TextBox();
-            this.edSalesBox = new System.Windows.Forms.TextBox();
-            this.frankSalesBox = new System.Windows.Forms.TextBox();
             this.grandTotalBox = new System.Windows.Forms.TextBox();
+            this.frankSalesBox = new System.Windows.Forms.TextBox();
+            this.edSalesBox = new System.Windows.Forms.TextBox();
+            this.daniSalesBox = new System.Windows.Forms.TextBox();
+            this.saleBox = new System.Windows.Forms.TextBox();
+            this.francisBtn = new System.Windows.Forms.Button();
+            this.edwardBtn = new System.Windows.Forms.Button();
+            this.danielleBtn = new System.Windows.Forms.Button();
+            this.highSaleOutput = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,89 +69,50 @@
             this.groupBox1.Size = new System.Drawing.Size(491, 353);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Home Sales";
             // 
-            // label1
+            // grandTotalBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "How much was the sale?";
+            this.grandTotalBox.Location = new System.Drawing.Point(171, 280);
+            this.grandTotalBox.Name = "grandTotalBox";
+            this.grandTotalBox.ReadOnly = true;
+            this.grandTotalBox.Size = new System.Drawing.Size(100, 20);
+            this.grandTotalBox.TabIndex = 15;
+            this.grandTotalBox.TabStop = false;
             // 
-            // label2
+            // frankSalesBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Who made the sale?";
+            this.frankSalesBox.Location = new System.Drawing.Point(171, 251);
+            this.frankSalesBox.Name = "frankSalesBox";
+            this.frankSalesBox.ReadOnly = true;
+            this.frankSalesBox.Size = new System.Drawing.Size(100, 20);
+            this.frankSalesBox.TabIndex = 14;
+            this.frankSalesBox.TabStop = false;
             // 
-            // label3
+            // edSalesBox
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(66, 193);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Danielle\'s Sales";
+            this.edSalesBox.Location = new System.Drawing.Point(171, 222);
+            this.edSalesBox.Name = "edSalesBox";
+            this.edSalesBox.ReadOnly = true;
+            this.edSalesBox.Size = new System.Drawing.Size(100, 20);
+            this.edSalesBox.TabIndex = 13;
+            this.edSalesBox.TabStop = false;
             // 
-            // label4
+            // daniSalesBox
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 225);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Edward\'s Sales";
+            this.daniSalesBox.Location = new System.Drawing.Point(171, 190);
+            this.daniSalesBox.Name = "daniSalesBox";
+            this.daniSalesBox.ReadOnly = true;
+            this.daniSalesBox.Size = new System.Drawing.Size(100, 20);
+            this.daniSalesBox.TabIndex = 12;
+            this.daniSalesBox.TabStop = false;
             // 
-            // label5
+            // saleBox
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(66, 254);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Francis\' Sales";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(66, 283);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Grand Total";
-            // 
-            // highSaleOutput
-            // 
-            this.highSaleOutput.AutoSize = true;
-            this.highSaleOutput.Location = new System.Drawing.Point(66, 319);
-            this.highSaleOutput.Name = "highSaleOutput";
-            this.highSaleOutput.Size = new System.Drawing.Size(0, 13);
-            this.highSaleOutput.TabIndex = 6;
-            // 
-            // danielleBtn
-            // 
-            this.danielleBtn.Location = new System.Drawing.Point(69, 121);
-            this.danielleBtn.Name = "danielleBtn";
-            this.danielleBtn.Size = new System.Drawing.Size(83, 38);
-            this.danielleBtn.TabIndex = 1;
-            this.danielleBtn.Text = "Danielle";
-            this.danielleBtn.UseVisualStyleBackColor = true;
-            this.danielleBtn.Click += new System.EventHandler(this.danielleBtn_Click);
-            // 
-            // edwardBtn
-            // 
-            this.edwardBtn.Location = new System.Drawing.Point(206, 121);
-            this.edwardBtn.Name = "edwardBtn";
-            this.edwardBtn.Size = new System.Drawing.Size(82, 38);
-            this.edwardBtn.TabIndex = 2;
-            this.edwardBtn.Text = "Edward";
-            this.edwardBtn.UseVisualStyleBackColor = true;
-            this.edwardBtn.Click += new System.EventHandler(this.edwardBtn_Click);
+            this.saleBox.Location = new System.Drawing.Point(69, 49);
+            this.saleBox.Name = "saleBox";
+            this.saleBox.Size = new System.Drawing.Size(131, 20);
+            this.saleBox.TabIndex = 0;
             // 
             // francisBtn
             // 
@@ -163,48 +124,87 @@
             this.francisBtn.UseVisualStyleBackColor = true;
             this.francisBtn.Click += new System.EventHandler(this.francisBtn_Click);
             // 
-            // saleBox
+            // edwardBtn
             // 
-            this.saleBox.Location = new System.Drawing.Point(69, 49);
-            this.saleBox.Name = "saleBox";
-            this.saleBox.Size = new System.Drawing.Size(131, 20);
-            this.saleBox.TabIndex = 0;
+            this.edwardBtn.Location = new System.Drawing.Point(206, 121);
+            this.edwardBtn.Name = "edwardBtn";
+            this.edwardBtn.Size = new System.Drawing.Size(82, 38);
+            this.edwardBtn.TabIndex = 2;
+            this.edwardBtn.Text = "Edward";
+            this.edwardBtn.UseVisualStyleBackColor = true;
+            this.edwardBtn.Click += new System.EventHandler(this.edwardBtn_Click);
             // 
-            // daniSalesBox
+            // danielleBtn
             // 
-            this.daniSalesBox.Location = new System.Drawing.Point(171, 190);
-            this.daniSalesBox.Name = "daniSalesBox";
-            this.daniSalesBox.ReadOnly = true;
-            this.daniSalesBox.Size = new System.Drawing.Size(100, 20);
-            this.daniSalesBox.TabIndex = 12;
-            this.daniSalesBox.TabStop = false;
+            this.danielleBtn.Location = new System.Drawing.Point(69, 121);
+            this.danielleBtn.Name = "danielleBtn";
+            this.danielleBtn.Size = new System.Drawing.Size(83, 38);
+            this.danielleBtn.TabIndex = 1;
+            this.danielleBtn.Text = "Danielle";
+            this.danielleBtn.UseVisualStyleBackColor = true;
+            this.danielleBtn.Click += new System.EventHandler(this.danielleBtn_Click);
             // 
-            // edSalesBox
+            // highSaleOutput
             // 
-            this.edSalesBox.Location = new System.Drawing.Point(171, 222);
-            this.edSalesBox.Name = "edSalesBox";
-            this.edSalesBox.ReadOnly = true;
-            this.edSalesBox.Size = new System.Drawing.Size(100, 20);
-            this.edSalesBox.TabIndex = 13;
-            this.edSalesBox.TabStop = false;
+            this.highSaleOutput.AutoSize = true;
+            this.highSaleOutput.Location = new System.Drawing.Point(66, 319);
+            this.highSaleOutput.Name = "highSaleOutput";
+            this.highSaleOutput.Size = new System.Drawing.Size(0, 13);
+            this.highSaleOutput.TabIndex = 6;
             // 
-            // frankSalesBox
+            // label6
             // 
-            this.frankSalesBox.Location = new System.Drawing.Point(171, 251);
-            this.frankSalesBox.Name = "frankSalesBox";
-            this.frankSalesBox.ReadOnly = true;
-            this.frankSalesBox.Size = new System.Drawing.Size(100, 20);
-            this.frankSalesBox.TabIndex = 14;
-            this.frankSalesBox.TabStop = false;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(66, 283);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Grand Total";
             // 
-            // grandTotalBox
+            // label5
             // 
-            this.grandTotalBox.Location = new System.Drawing.Point(171, 280);
-            this.grandTotalBox.Name = "grandTotalBox";
-            this.grandTotalBox.ReadOnly = true;
-            this.grandTotalBox.Size = new System.Drawing.Size(100, 20);
-            this.grandTotalBox.TabIndex = 15;
-            this.grandTotalBox.TabStop = false;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(66, 254);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Francis\' Sales";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(66, 225);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Edward\'s Sales";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(66, 193);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Danielle\'s Sales";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(66, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Who made the sale?";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(66, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "How much was the sale?";
             // 
             // Form1
             // 
