@@ -3,12 +3,11 @@
 decimal daniSales = 0m;
 decimal edSales = 0m;
 decimal frankSales = 0m;
-
-
+decimal grandTotal = daniSales + frankSales + frankSales;
 
 for (; ; )
 {
-    Console.WriteLine("Who made the sale?");
+Console.WriteLine("Who made the sale?");
 string realtor = Console.ReadLine();
 Console.WriteLine("How much was the sale?");
 decimal sales = Convert.ToDecimal(Console.ReadLine());
@@ -17,15 +16,24 @@ decimal sales = Convert.ToDecimal(Console.ReadLine());
 
 {
     case "d":
-        daniSales = daniSales + sales;
+        daniSales += daniSales + sales;
         break;
     case "e":
-        edSales = edSales + sales;
+        edSales += edSales + sales;
         break;
     case "f":
-        frankSales = frankSales + sales;
+        frankSales += frankSales + sales;
         break;
+        case "z":
+            Console.WriteLine("Danielle Sales: {0:C}", daniSales);
+            Console.WriteLine("Edward Sales: {0:C}", edSales);
+            Console.WriteLine("Francis Sales: {0:C}", frankSales);
+            Console.WriteLine("Grand total: {0:C}", grandTotal);
+            break;
 };
+    if (realtor != "d" || realtor != "e" || realtor != "f" || realtor != "z")
+        Console.WriteLine("Invalid Initial");
+    break;
     //if (realtor == "d")
     //daniSales += sales + daniSales;
 
