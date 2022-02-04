@@ -37,7 +37,7 @@ namespace EX1
                 phoneNum[3] = "555-1687";
                 phoneNum[4] = "555-7763";
             }
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < firstName.Length; i++)
                 if (firstName[i].ToLower().Contains(searchTerms.ToLower()))
                 {
                     lblFirstName.Text = firstName[i];

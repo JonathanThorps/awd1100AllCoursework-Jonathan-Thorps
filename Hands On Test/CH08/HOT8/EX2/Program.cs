@@ -1,17 +1,19 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Enter price of shopping cart items or press [0] to quit");
+int numItems = 0;
+decimal subtotal = 0;
+const decimal tax = 0.08m;
 
 for (int i = 1; i < 10 ; i++)
 {
-    decimal subtotal = 0;
-    const decimal tax = 0.08m;
-    int numItems = 0;
+  
+   
     decimal itemPrice = Convert.ToDecimal(Console.ReadLine());
 
     if (itemPrice > 0)
     {
         subtotal = subtotal + itemPrice;
-        numItems += i;
+        numItems++;
     }
 
     if(itemPrice == 0)
