@@ -2,13 +2,13 @@ namespace LAB5
 {
     public partial class Form1 : Form
     {
-        char[] vowels =
+        char[] vowels = new char[]
         {
-            vowels[0] = 'A',
-            vowels[1] = 'E',
-            vowels[2] = 'I',
-            vowels[3] = 'O',
-            vowels[4] = 'U'
+            vowels[0] = 'a',
+            vowels[1] = 'e',
+            vowels[2] = 'i',
+            vowels[3] = 'o',
+            vowels[4] = 'u'
         };
         public Form1()
         {
@@ -22,11 +22,14 @@ namespace LAB5
         private string CountVowels()
         {
             string phrase = phraseBox.Text;
-            for (; ;)
-            {
-                if (phrase.Length.Contains(ToLower(vowels.Length)))
-                {
+            int vowelNum;
 
+            for (int i = 0; i < phrase.Length; i++)
+            {
+                if (phrase.Length.ToLower().Contains(vowels[i]))
+                {
+                    vowelNum = i;
+                    lblVowelOutput.Text = String.Format("There are {0} vowels in your phase.", vowelNum);
                 }
             }
             
