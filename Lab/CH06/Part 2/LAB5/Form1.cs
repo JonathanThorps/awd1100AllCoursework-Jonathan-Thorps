@@ -15,8 +15,8 @@ namespace LAB5
         }
         private string ParseBid(string bid)
         {
-            if (bid !=)
+            if (bid != int || bid != decimal || bid =! double)
         }
-        return lblBidStatus.Text = String.Format("Your Bid of {0} was accepted", )
+        return lblBidStatus.Text = String.Format("Your Bid of {0} was accepted", bidAmount);
     }
 }

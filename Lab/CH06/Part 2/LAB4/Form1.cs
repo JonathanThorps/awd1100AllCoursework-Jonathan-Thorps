@@ -1,7 +1,5 @@
 namespace LAB4
 {
-    using System;
-    using System.Collections;
     public partial class Form1 : Form
     {
         public Form1()
@@ -13,16 +11,17 @@ namespace LAB4
         {
             string phrase = phraseBox.Text;
             string[] words = phrase.Split(" ");
+            foreach (string word in words)
             SortWords();
             
         }
         private string SortWords(params string[] words)
         {
-            for (int i = 0; i < words.Length; i++)
+            foreach (string i in words)
             {
-                words.Sort();
+                Array.Sort(words);
             }
-            return lblSortOutput.Text = String.Format("{0}", words);
+            return lblSortOutput.Text = String.Format($"{words}");
         }
     }
 }
