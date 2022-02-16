@@ -22,34 +22,34 @@ namespace LAB6
             double average = 0;
             CalculateStats(out minNum,out maxNum,out sum, out average,numbers);
             //output
-            lblNumEntered.Text = String.Format($"{count}");
+            lblNumEntered.Text = count.ToString();
         }
-        private void CalculateStats(out int min, out int max, out double sum, out double avg, params int[] values)
+        private void CalculateStats(out int min, out int max, out double sum, out double avg, params int[] numbers)
         {
             do
             {
-                for (int i = 0; i < 20; i++)
+                for (int i = 0; i < count; i++)
                 {
-                    if (values[i] > max)
+                    if (numbers[i] > max)
                     {
-                        max = values[i];
-                        lblNumHighest.Text = values[i].ToString();
+                        max = numbers[i];
+                        lblNumHighest.Text = numbers[i].ToString();
                     }
                     else
                     {
-                        min = values[i];
-                        lblNumLowest.Text = values[i].ToString();
+                        min = numbers[i];
+                        lblNumLowest.Text = numbers[i].ToString();
                     }
                 }
 
-                for (int i = 0; i < 20; i++)
+                for (int i = 0; i < count; i++)
                 {
-                    sum += values[i] + sum;
-                    lblSum.Text = String.Format($"{sum}");
+                    sum += numbers[i];
+                    lblSum.Text = sum.ToString();
                 }
 
                 avg = sum / count;
-                lblAverage.Text = String.Format($"{avg}");
+                lblAverage.Text = avg.ToString();
 
             } while (count < 20);
 
