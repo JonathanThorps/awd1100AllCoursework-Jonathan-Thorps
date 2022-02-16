@@ -13,14 +13,14 @@ namespace LAB5
             double bidAmount = double.Parse(biddingBox.Text);
             ParseBid();
         }
-        private string ParseBid(out double bid)
+        private string ParseBid(out double bidAmount)
         {
-            string errorMsg = String.Format("Your bid of {0:C} was not accepted", bid);
-            string bidAccepted = String.Format("Your bid of {0:C} was accepted", bid);
+            string errorMsg = String.Format("Your bid of {0:C} was not accepted", bidAmount);
+            string bidAccepted = String.Format("Your bid of {0:C} was accepted", bidAmount);
 
-            if (int.TryParse(bid, out bidAmount))
+            if (int.TryParse(out double bidAmount))
             {
-                if (bid > 10)
+                if (bidAmount > 10)
                 {
                     lblBidStatus.Text = bidAccepted;
                 }
@@ -29,10 +29,10 @@ namespace LAB5
                     lblBidStatus.Text = errorMsg;
                 }
             }
-            else if (bid.StartsWith("$"))
+            else if (bidAmount.StartsWith("$"))
             {
-             bid = bid.Substring(1);
-                if (bid > 10)
+             bidAmount = bidAmount.Substring(1);
+                if (bidAmount > 10)
                 {
                     lblBidStatus.Text = bidAccepted;
                 }
@@ -41,10 +41,10 @@ namespace LAB5
                     lblBidStatus.Text = errorMsg;
                 }
             }
-            else if (bid.StartsWith("$ "))
+            else if (bidAmount.StartsWith("$ "))
             {
-             bid = bid.Substring(2);
-                if (bid > 10)
+             bidAmount = bidAmount.Substring(2);
+                if (bidAmount > 10)
                 {
                     lblBidStatus.Text = bidAccepted;
                 }
@@ -53,9 +53,12 @@ namespace LAB5
                     lblBidStatus.Text = errorMsg;
                 }
             }
-            else if (bid.Contains("dollar"))
-            {
-                string[] bidInput = bid.Split('\u002C');
+            //else if (bidAmount.Contains("dollar"))
+            //{
+            //    string[] bidInput = bidAmount.Split('\u002C');
+            //    {
+            //        if (!bidInput.Any())
+            //    }
                 
             }
                 

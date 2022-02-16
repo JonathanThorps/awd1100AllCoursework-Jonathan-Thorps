@@ -21,7 +21,7 @@ namespace LAB4
             {
                 Array.Sort(words);
             }
-            return lblSortOutput.Text = String.Format($"{words}");
+            return lblSortOutput.Text = words.ToString();
         }
     }
 }
