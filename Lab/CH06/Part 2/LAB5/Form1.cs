@@ -53,12 +53,12 @@ namespace LAB5
                     lblBidStatus.Text = errorMsg;
                 }
             }
-            //else if (bidAmount.Contains("dollar"))
-            //{
-            //    string[] bidInput = bidAmount.Split('\u002C');
-            //    {
-            //        if (!bidInput.Any())
-            //    }
+            else if (bidAmount.Contains("dollar"))
+            {
+                string[] bidInput = bidAmount.Split('\u002C');
+                {
+                    if (!bidInput.Any())
+                }
                 
             }
                 
