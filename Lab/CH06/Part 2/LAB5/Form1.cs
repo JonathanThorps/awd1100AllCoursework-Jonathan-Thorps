@@ -29,7 +29,7 @@ namespace LAB5
                     lblBidStatus.Text = errorMsg;
                 }
             }
-            else if (bidAmount.StartsWith("$"))
+            else if (int.TryParse(bidAmount.StartsWith("$")))
             {
              bidAmount = bidAmount.Substring(1);
                 if (bidAmount > 10)

@@ -24,24 +24,25 @@ namespace LAB6
             //output
             lblNumEntered.Text = count.ToString();
         }
-        private void CalculateStats(out int min, out int max, out double sum, out double avg, params int[] numbers)
+        private int CalculateStats(out int minNum, out int maxNum, out double sum, out double avg, params int[] numbers)
         {
             do
             {
                 for (int i = 0; i < count; i++)
                 {
-                    if (numbers[i] > max)
+                    if (numbers[i] > maxNum)
                     {
-                        max = numbers[i];
+                        maxNum = numbers[i];
                         lblNumHighest.Text = numbers[i].ToString();
                     }
                     else
                     {
-                        min = numbers[i];
+                        minNum = numbers[i];
                         lblNumLowest.Text = numbers[i].ToString();
                     }
+                   
                 }
-
+                sum = 0;
                 for (int i = 0; i < count; i++)
                 {
                     sum += numbers[i];
@@ -54,6 +55,6 @@ namespace LAB6
             } while (count < 20);
 
         }
-        
+       
     }
 }
