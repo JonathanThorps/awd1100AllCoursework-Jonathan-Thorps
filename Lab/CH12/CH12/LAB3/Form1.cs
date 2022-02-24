@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LAB2
+namespace LAB3
 {
     public partial class Form1 : Form
     {
@@ -17,27 +17,22 @@ namespace LAB2
             InitializeComponent();
         }
 
-        private void btnSearchName_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnSearchUpc_Click(object sender, EventArgs e)
+        private void btnDeposit_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnWithdraw_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
 
         }
