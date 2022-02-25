@@ -17,6 +17,11 @@ namespace LAB4
             _publisher = publisher;
             _price = price;
         }
+
+        public Game()
+        {
+        }
+
         public string GetName()
         {
             return _name;
