@@ -13,6 +13,11 @@ namespace LAB3
         private string _name;
         private decimal _balance;
 
+        public Account()
+        {
+
+        }
+
         public Account(string account, string pin, string name, decimal balance)
         {
             _accountNumber = account;
@@ -42,8 +47,15 @@ namespace LAB3
         }
         public decimal GetBalance()
         {
-            return _balance;
+            get { return _balance; }
+            set { _balance = value; }
         }
+        public override string ToString(string name, decimal balance)
+        {
+            lblWelcome.Text = "Welcome back {_name}!";
+            lblBalance.Text = "Your account balance is {_balance}";
+        }
+            
     }
    
 }
