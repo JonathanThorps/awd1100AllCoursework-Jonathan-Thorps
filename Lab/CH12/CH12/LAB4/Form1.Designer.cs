@@ -87,7 +87,7 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(191, 151);
+            this.lblTitle.Location = new System.Drawing.Point(156, 151);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(0, 16);
             this.lblTitle.TabIndex = 3;
@@ -95,7 +95,7 @@
             // lblPublisher
             // 
             this.lblPublisher.AutoSize = true;
-            this.lblPublisher.Location = new System.Drawing.Point(191, 202);
+            this.lblPublisher.Location = new System.Drawing.Point(156, 202);
             this.lblPublisher.Name = "lblPublisher";
             this.lblPublisher.Size = new System.Drawing.Size(0, 16);
             this.lblPublisher.TabIndex = 4;
@@ -103,7 +103,7 @@
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(191, 249);
+            this.lblPrice.Location = new System.Drawing.Point(156, 249);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(0, 16);
             this.lblPrice.TabIndex = 5;

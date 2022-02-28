@@ -16,5 +16,25 @@ namespace LAB
         {
             InitializeComponent();
         }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void depositBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void withdrawBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

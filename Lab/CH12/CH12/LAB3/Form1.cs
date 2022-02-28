@@ -12,38 +12,15 @@ namespace LAB3
 {
     public partial class Form1 : Form
     {
-        string[] accountNumber = new string[5];
+        List<Account> accounts = new List<Account>();
         {
-        "111-222-333",
-        "222-444-666",
-        "333-555-777",
-        "123-456-789",
-        "987-654-321"
+            new Account("111-222-333", "Mr. Smith", "1234", 10000m),
+            new Account("222-444-666", "Mr. Jones", "5678", 5000m),
+            new Account("333-555-777", "Mrs. Harris", "2468", 2000m),
+            new Account("123-456-789", "Mrs. Rogers", "3579", 3500m),
+            new Account("987-654-321", "Dr. Hunter", "9876", 50000m)
         };
-        string[] accountNames = new string[5];
-        {
-        "Mr. Smith",
-        "Mr. Jones",
-        "Mrs. Harris",
-        "Mrs. Rogers",
-        "Dr. Hunter"
-        };
-        string[] accountPin = new string[5];
-        {
-        "1234",
-        "5678",
-        "2468",
-        "3579",
-        "9876"
-        };
-    decimal [] accountBalance = new decimal[5];
-        {
-        10000m,
-        5000m,
-        2000m,
-        3500m,
-        50000m
-        };
+
         public Form1()
         {
             InitializeComponent();
