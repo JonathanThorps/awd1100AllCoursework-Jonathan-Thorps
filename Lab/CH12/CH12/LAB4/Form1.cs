@@ -31,6 +31,8 @@ namespace LAB4
             string gameSearch = txtSearchBox.Text;
 
             int gamePosition = SearchForGame(gameSearch);
+            SearchForGame(gameSearch);
+            ShowGameInfo(gamePosition);
           
             //string[] name = new string[]
             //{
@@ -62,7 +64,7 @@ namespace LAB4
         public int SearchForGame(string gameSearch)
         {
             int gameIndex = -1; //-1 means game not found
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < games.Count; i++)
             {
                 if (games[i].GetName().ToLower().Contains(gameSearch.ToLower()))
                 {
@@ -81,20 +83,24 @@ namespace LAB4
 
         }
     
-        public string ShowGameInfo(int gamePosition)
+        public void ShowGameInfo(int gamePosition)
         {
-            if (gamePosition > -1)
-            {
-                lblTitle.Text = Game.name;
-                lblPublisher.Text = Game.publisher;
-                lblPrice.Text = Game.price;
-            }
-            else
-            {
-                lblTitle.Text = "Game Not Found";
-                lblPublisher.Text = "Game Not Found";
-                lblPrice.Text = "Game Not Found";
-            }
+            //for (int i = 0; i < games.Count; i++)
+            //{
+                if (gamePosition > -1)
+                {
+                    lblTitle.Text = games[gamePosition].GetName();
+                    lblPublisher.Text = games[gamePosition].GetPublisher();
+                    lblPrice.Text = Convert.ToString(games[gamePosition].GetPrice());
+                }
+                else
+                {
+                    lblTitle.Text = "Game Not Found";
+                    lblPublisher.Text = "Game Not Found";
+                    lblPrice.Text = "Game Not Found";
+                }
+            //}
+            
         }
     
     }
