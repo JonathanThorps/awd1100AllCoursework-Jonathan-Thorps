@@ -12,6 +12,15 @@ namespace LAB4
 {
     public partial class Form1 : Form
     {
+        List<Game> games = new List<Game>()
+            {
+                new Game("Player Unknown Battlegrounds (PUBG)", "Bluehole",35),
+                new Game("League of Legends", "Riot Games", 0),
+                new Game("Call of Duty: Black OPS III", "Activision", 60),
+                new Game("Battlefield 4", "Electronic Arts (EA)", 20),
+                new Game("Super Mario Odyssey", "Nintendo", 60)
+            };
+
         public Form1()
         {
             InitializeComponent();
@@ -19,61 +28,74 @@ namespace LAB4
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string game = txtSearchBox.Text;
+            string gameSearch = txtSearchBox.Text;
 
-            //Game<string> games = new Game();
-            //{ games.name = "Player Unknown Battlegrounds (PUBG)"; games.publisher = "Bluehole"; games.price = 35; }
-            //{ games.name = "League of Legends"; games.publisher = "Riot Games"; games.price = 0; }
-            //{ games.name = "Call of Duty: Black OPS III"; games.publisher = "Activision"; games.price = 60; }
-            //{ games.name = "Battlefield 4"; games.publisher = "Electronic Arts (EA)"; games.price = 20; }
-            //{ games.name = "Super Mario Odyssey"; games.publisher = "Nintendo"; games.price = 60; }
+            int gamePosition = SearchForGame(gameSearch);
+          
+            //string[] name = new string[]
+            //{
+            //    "Player Unknown Battlegrounds (PUBG)",
+            //    "League of Legends",
+            //    "Call of Duty: Black OPS III",
+            //    "Battlefield 4",
+            //    "Super Mario Odyssey"
+            //};
+            //string[] publisher = new string[]
+            //{
+            //    "Bluehole",
+            //    "Riot Games",
+            //    "Activision",
+            //    "Electronic Arts (EA)",
+            //    "Nintendo"
+            //};
+            //float[] price = new float[]
+            //{
+            //    35,
+            //    0,
+            //    60,
+            //    20,
+            //    60
+            //};
+           
+        }
 
-            string[] name = new string[]
-            {
-                "Player Unknown Battlegrounds (PUBG)",
-                "League of Legends",
-                "Call of Duty: Black OPS III",
-                "Battlefield 4",
-                "Super Mario Odyssey"
-            };
-            string[] publisher = new string[]
-            {
-                "Bluehole",
-                "Riot Games",
-                "Activision",
-                "Electronic Arts (EA)",
-                "Nintendo"
-            };
-            float[] price = new float[]
-            {
-                35,
-                0,
-                60,
-                20,
-                60
-            };
-
+        public int SearchForGame(string gameSearch)
+        {
+            int gameIndex = -1; //-1 means game not found
             for (int i = 0; i < 10; i++)
             {
-                if (game.ToLower().Contains(name.Length.ToLower()))
+                if (games[i].GetName().ToLower().Contains(gameSearch.ToLower()))
                 {
-                    lblTitle.Text = name[i];
-                    lblPublisher.Text = publisher[i];
-                    lblPrice.Text = $"{price[i]}";
+                    
+                    gameIndex = i;
                 }
-                else if (game.ToLower().Contains(publisher.Length.ToLower()))
+                else if (games[i].GetPublisher().ToLower().Contains(gameSearch.ToLower()))
                 {
-                    lblTitle.Text = name[i];
-                    lblPublisher.Text = publisher[i];
-                    lblPrice.Text = $"{price[i]}";
+                    
+                    gameIndex = i;
                 }
-                else
-                {
-                    lblTitle.Text = "Game Not Found";
-                    lblPublisher.Text = "Game Not Found";
-                    lblPrice.Text = "Game Not Found";
-                }
+
+            }
+            return gameIndex;
+
+
+        }
+    
+        public string ShowGameInfo(int gamePosition)
+        {
+            if (gamePosition > -1)
+            {
+                lblTitle.Text = Game.name;
+                lblPublisher.Text = Game.publisher;
+                lblPrice.Text = Game.price;
+            }
+            else
+            {
+                lblTitle.Text = "Game Not Found";
+                lblPublisher.Text = "Game Not Found";
+                lblPrice.Text = "Game Not Found";
             }
         }
+    
     }
 }
