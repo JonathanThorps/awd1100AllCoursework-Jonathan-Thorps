@@ -12,13 +12,16 @@ namespace LB2
 {
     public partial class Form1 : Form
     {
-        List<Conference> conference = new List<Conference>(20)
+        List<Conference> conferences = new List<Conference>(20)
         {
 
         };
+        int totalAttendees = 0;
         public Form1()
         {
             InitializeComponent();
+            conferences.Add(new Conference() { Attendees = 100, GroupName = "Dev Up", StartingDate = Convert.ToDateTime("1/1/2000"), Room = Room.ROOM_101 });
+            conferences.Add(new Conference() { Attendees = 100, GroupName = "Dev Up 2", StartingDate = Convert.ToDateTime("1/1/2001"), Room = Room.ROOM_102 });
         }
 
         private void btnAddConf_Click(object sender, EventArgs e)
@@ -28,22 +31,24 @@ namespace LB2
             int attendees = Convert.ToInt32(txtAttendees.Text);
             int room = Convert.ToInt32(txtRoom.Text);
 
-            conference.Add(new Conference() { Attendees = attendees, GroupName = groupName, StartingDate = conferenceDate, Room = (Room)room });
+            conferences.Add(new Conference() { Attendees = attendees, GroupName = groupName, StartingDate = conferenceDate, Room = (Room)room });
+
+            lblConfNum.Text += conferences.Count.ToString();
+            totalAttendees += attendees;
+            lblTotalAttend.Text = attendees.ToString();
+            
         }
 
         private void btnSearchConf_Click(object sender, EventArgs e)
         {
-            DateTime beginDate = Convert.ToDateTime(txtStartDate.Text);
-            DateTime endDate = Convert.ToDateTime(txtEndDate.Text);
-            Conference.Display();
+            DateTime startingSearchDate = Convert.ToDateTime(txtBeginDate.Text);
+            DateTime endingSearchDate = Convert.ToDateTime(txtEndDate.Text);
 
-            for (int i = 0; i < conference.Count; i++)
+            for (int i = 0; i < conferences.Count; i++)
             {
-                int startPosition = -1;
-                int endPosition = 0;
-                if (beginDate && endDate)
+                if (conferences[i].StartingDate > startingSearchDate && conferences[i].StartingDate < endingSearchDate)
                 {
-                    
+                    lblResult.Text += conferences[i].Display();
                 }  
                     
             }

@@ -44,7 +44,7 @@
             this.lblTotalAttend = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblBeginDate = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
             this.lblEndDate = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             // 
             // txtStartDate
             // 
-            this.txtStartDate.Location = new System.Drawing.Point(247, 107);
+            this.txtStartDate.Location = new System.Drawing.Point(238, 107);
             this.txtStartDate.Name = "txtStartDate";
             this.txtStartDate.Size = new System.Drawing.Size(100, 22);
             this.txtStartDate.TabIndex = 1;
@@ -124,7 +124,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(244, 69);
+            this.label2.Location = new System.Drawing.Point(235, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 16);
             this.label2.TabIndex = 9;
@@ -182,13 +182,13 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "End";
             // 
-            // lblBeginDate
+            // lblResult
             // 
-            this.lblBeginDate.AutoSize = true;
-            this.lblBeginDate.Location = new System.Drawing.Point(74, 334);
-            this.lblBeginDate.Name = "lblBeginDate";
-            this.lblBeginDate.Size = new System.Drawing.Size(0, 16);
-            this.lblBeginDate.TabIndex = 16;
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(74, 334);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(0, 16);
+            this.lblResult.TabIndex = 16;
             // 
             // lblEndDate
             // 
@@ -224,7 +224,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblEndDate);
-            this.Controls.Add(this.lblBeginDate);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblTotalAttend);
@@ -266,7 +266,7 @@
         private System.Windows.Forms.Label lblTotalAttend;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblBeginDate;
+        private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Label lblEndDate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

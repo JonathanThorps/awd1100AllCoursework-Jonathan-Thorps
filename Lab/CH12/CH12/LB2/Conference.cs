@@ -15,7 +15,7 @@ namespace LB2
 
         public string Display()
         {
-            return $"{Attendees} {GroupName} on {StartingDate} {Room}";
+            return $"{Attendees} {GroupName} on {StartingDate} {Room}\n";
         }
         public string GroupName
         { get => _groupName; set => _groupName = value; }
@@ -27,6 +27,6 @@ namespace LB2
         { get => _attendees; set => _attendees = value; }
 
         public Room Room
-        { get => Room; set => _room = value; }
+        { get => _room; set => _room = value; }
     }
 }
