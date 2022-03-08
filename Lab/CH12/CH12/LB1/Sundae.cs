@@ -15,7 +15,7 @@ namespace LB1
         private double _price;
 
 
-        public int ToppingsCount
+        public int ToppingCount
         {
             get { return _toppingCount; }
         }

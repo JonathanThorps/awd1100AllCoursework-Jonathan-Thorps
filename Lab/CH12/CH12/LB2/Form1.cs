@@ -12,7 +12,7 @@ namespace LB2
 {
     public partial class Form1 : Form
     {
-        List<Conference> conference = new List<Conference>()
+        List<Conference> conference = new List<Conference>(20)
         {
 
         };
@@ -28,19 +28,22 @@ namespace LB2
             int attendees = Convert.ToInt32(txtAttendees.Text);
             int room = Convert.ToInt32(txtRoom.Text);
 
-            conference.Add(new Conference() { Attendees = attendees, GroupName = groupName, StartingDate = startDate, Room = (Room)room });
+            conference.Add(new Conference() { Attendees = attendees, GroupName = groupName, StartingDate = conferenceDate, Room = (Room)room });
         }
 
         private void btnSearchConf_Click(object sender, EventArgs e)
         {
             DateTime beginDate = Convert.ToDateTime(txtStartDate.Text);
             DateTime endDate = Convert.ToDateTime(txtEndDate.Text);
+            Conference.Display();
 
             for (int i = 0; i < conference.Count; i++)
             {
-                if (beginDate conference && endDate)
+                int startPosition = -1;
+                int endPosition = 0;
+                if (beginDate && endDate)
                 {
-                    lblBeginDate.Text = Conference.Display();
+                    
                 }  
                     
             }

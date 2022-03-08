@@ -29,7 +29,23 @@ namespace LB1
 
         public double Price
         {
-            get { return _sundae.Price + _soda.Price; }
+            get
+            {
+                double price = 0;
+                if (_soda == null)
+                {
+                    price = _sundae.Price;
+                }
+                else if (_sundae == null)
+                {
+                    price = _soda.Price;
+                }
+                else
+                {
+                    price = _sundae.Price + _soda.Price;
+                }
+                return price;
+            }   
         }
 
         public Order(string name, bool hasSundae, bool hasSoda)
