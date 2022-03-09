@@ -16,6 +16,10 @@ namespace LB3
         private Ability _f;
         private Ability _e;
 
+        Champion()
+        {
+            _name = Name;
+        }
         public Champion(string name, ChampionType type, Ability leftMouse, Ability rightMouse, Ability q, Ability f, Ability e);
 
         public string Name
