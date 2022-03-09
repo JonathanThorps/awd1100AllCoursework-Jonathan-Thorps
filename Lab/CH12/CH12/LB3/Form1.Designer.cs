@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtChampSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.lblChampion = new System.Windows.Forms.Label();
-            this.lblChampType = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblLeftMouse = new System.Windows.Forms.Label();
-            this.lblRightMouse = new System.Windows.Forms.Label();
-            this.lblQAttack = new System.Windows.Forms.Label();
-            this.lblFAttack = new System.Windows.Forms.Label();
+            this.txtChampSearch = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblEAttack = new System.Windows.Forms.Label();
+            this.lblFAttack = new System.Windows.Forms.Label();
+            this.lblQAttack = new System.Windows.Forms.Label();
+            this.lblRightMouse = new System.Windows.Forms.Label();
+            this.lblLeftMouse = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblChampType = new System.Windows.Forms.Label();
+            this.lblChampion = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Paladins Wiki";
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(408, 42);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(96, 34);
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtChampSearch
+            // 
+            this.txtChampSearch.Location = new System.Drawing.Point(56, 48);
+            this.txtChampSearch.Name = "txtChampSearch";
+            this.txtChampSearch.Size = new System.Drawing.Size(315, 22);
+            this.txtChampSearch.TabIndex = 0;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblEAttack);
@@ -74,119 +91,20 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.lblChampType);
             this.groupBox2.Controls.Add(this.lblChampion);
-            this.groupBox2.Location = new System.Drawing.Point(29, 149);
+            this.groupBox2.Location = new System.Drawing.Point(29, 126);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(508, 317);
+            this.groupBox2.Size = new System.Drawing.Size(508, 340);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
             // 
-            // txtChampSearch
+            // lblEAttack
             // 
-            this.txtChampSearch.Location = new System.Drawing.Point(56, 48);
-            this.txtChampSearch.Name = "txtChampSearch";
-            this.txtChampSearch.Size = new System.Drawing.Size(315, 22);
-            this.txtChampSearch.TabIndex = 0;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(408, 42);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(96, 34);
-            this.btnSearch.TabIndex = 1;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // lblChampion
-            // 
-            this.lblChampion.AutoSize = true;
-            this.lblChampion.Enabled = false;
-            this.lblChampion.Location = new System.Drawing.Point(24, 32);
-            this.lblChampion.Name = "lblChampion";
-            this.lblChampion.Size = new System.Drawing.Size(0, 16);
-            this.lblChampion.TabIndex = 0;
-            // 
-            // lblChampType
-            // 
-            this.lblChampType.AutoSize = true;
-            this.lblChampType.Enabled = false;
-            this.lblChampType.Location = new System.Drawing.Point(24, 67);
-            this.lblChampType.Name = "lblChampType";
-            this.lblChampType.Size = new System.Drawing.Size(0, 16);
-            this.lblChampType.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 122);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Left Mouse";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 155);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Right Mouse";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 206);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Q:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 242);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "F:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 279);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 16);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "E:";
-            // 
-            // lblLeftMouse
-            // 
-            this.lblLeftMouse.AutoSize = true;
-            this.lblLeftMouse.Enabled = false;
-            this.lblLeftMouse.Location = new System.Drawing.Point(138, 122);
-            this.lblLeftMouse.Name = "lblLeftMouse";
-            this.lblLeftMouse.Size = new System.Drawing.Size(0, 16);
-            this.lblLeftMouse.TabIndex = 7;
-            // 
-            // lblRightMouse
-            // 
-            this.lblRightMouse.AutoSize = true;
-            this.lblRightMouse.Enabled = false;
-            this.lblRightMouse.Location = new System.Drawing.Point(138, 155);
-            this.lblRightMouse.Name = "lblRightMouse";
-            this.lblRightMouse.Size = new System.Drawing.Size(0, 16);
-            this.lblRightMouse.TabIndex = 8;
-            // 
-            // lblQAttack
-            // 
-            this.lblQAttack.AutoSize = true;
-            this.lblQAttack.Enabled = false;
-            this.lblQAttack.Location = new System.Drawing.Point(138, 206);
-            this.lblQAttack.Name = "lblQAttack";
-            this.lblQAttack.Size = new System.Drawing.Size(0, 16);
-            this.lblQAttack.TabIndex = 9;
+            this.lblEAttack.AutoSize = true;
+            this.lblEAttack.Enabled = false;
+            this.lblEAttack.Location = new System.Drawing.Point(138, 279);
+            this.lblEAttack.Name = "lblEAttack";
+            this.lblEAttack.Size = new System.Drawing.Size(0, 16);
+            this.lblEAttack.TabIndex = 11;
             // 
             // lblFAttack
             // 
@@ -197,14 +115,95 @@
             this.lblFAttack.Size = new System.Drawing.Size(0, 16);
             this.lblFAttack.TabIndex = 10;
             // 
-            // lblEAttack
+            // lblQAttack
             // 
-            this.lblEAttack.AutoSize = true;
-            this.lblEAttack.Enabled = false;
-            this.lblEAttack.Location = new System.Drawing.Point(138, 279);
-            this.lblEAttack.Name = "lblEAttack";
-            this.lblEAttack.Size = new System.Drawing.Size(0, 16);
-            this.lblEAttack.TabIndex = 11;
+            this.lblQAttack.AutoSize = true;
+            this.lblQAttack.Enabled = false;
+            this.lblQAttack.Location = new System.Drawing.Point(138, 206);
+            this.lblQAttack.Name = "lblQAttack";
+            this.lblQAttack.Size = new System.Drawing.Size(0, 16);
+            this.lblQAttack.TabIndex = 9;
+            // 
+            // lblRightMouse
+            // 
+            this.lblRightMouse.AutoSize = true;
+            this.lblRightMouse.Enabled = false;
+            this.lblRightMouse.Location = new System.Drawing.Point(138, 155);
+            this.lblRightMouse.Name = "lblRightMouse";
+            this.lblRightMouse.Size = new System.Drawing.Size(0, 16);
+            this.lblRightMouse.TabIndex = 8;
+            // 
+            // lblLeftMouse
+            // 
+            this.lblLeftMouse.AutoSize = true;
+            this.lblLeftMouse.Enabled = false;
+            this.lblLeftMouse.Location = new System.Drawing.Point(138, 122);
+            this.lblLeftMouse.Name = "lblLeftMouse";
+            this.lblLeftMouse.Size = new System.Drawing.Size(0, 16);
+            this.lblLeftMouse.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(24, 279);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(19, 16);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "E:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(24, 242);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(18, 16);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "F:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(24, 206);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 16);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Q:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(24, 155);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 16);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Right Mouse";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(24, 122);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Left Mouse";
+            // 
+            // lblChampType
+            // 
+            this.lblChampType.AutoSize = true;
+            this.lblChampType.Enabled = false;
+            this.lblChampType.Location = new System.Drawing.Point(24, 67);
+            this.lblChampType.Name = "lblChampType";
+            this.lblChampType.Size = new System.Drawing.Size(0, 16);
+            this.lblChampType.TabIndex = 1;
+            // 
+            // lblChampion
+            // 
+            this.lblChampion.AutoSize = true;
+            this.lblChampion.Enabled = false;
+            this.lblChampion.Location = new System.Drawing.Point(24, 32);
+            this.lblChampion.Name = "lblChampion";
+            this.lblChampion.Size = new System.Drawing.Size(0, 16);
+            this.lblChampion.TabIndex = 0;
             // 
             // Form1
             // 

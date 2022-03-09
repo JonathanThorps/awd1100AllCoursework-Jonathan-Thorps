@@ -26,7 +26,7 @@ namespace LB3
             _f = f;
             _e = e;
         }
-        
+
 
         public string Name { get { return _name; } }
 

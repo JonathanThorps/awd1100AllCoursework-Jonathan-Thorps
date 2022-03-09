@@ -32,7 +32,7 @@ namespace LB3
 
             for (int i = 0; i < champions.Count; i++)
             {
-                if (champions[i].Name == searchTerm)
+                if (champions[i].Name.ToLower().Contains(searchTerm.ToLower()))
                 {
                     lblChampion.Text = champions[i].Name;
                     lblChampType.Text = champions[i].Type.ToString();
