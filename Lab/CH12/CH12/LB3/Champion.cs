@@ -20,7 +20,10 @@ namespace LB3
         {
             _name = Name;
         }
-        public Champion(string name, ChampionType type, Ability leftMouse, Ability rightMouse, Ability q, Ability f, Ability e);
+        public Champion(string name, ChampionType type, Ability leftMouse, Ability rightMouse, Ability q, Ability f, Ability e)
+        {
+            _name = name;
+        }
 
         public string Name
             { get { return _name; } }
