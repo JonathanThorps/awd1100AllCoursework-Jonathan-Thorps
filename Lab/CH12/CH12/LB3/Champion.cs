@@ -16,17 +16,19 @@ namespace LB3
         private Ability _f;
         private Ability _e;
 
-        Champion()
-        {
-            _name = Name;
-        }
         public Champion(string name, ChampionType type, Ability leftMouse, Ability rightMouse, Ability q, Ability f, Ability e)
         {
             _name = name;
+            _type = type;
+            _leftMouse = leftMouse;
+            _rightMouse = rightMouse;
+            _q = q;
+            _f = f;
+            _e = e;
         }
+        
 
-        public string Name
-            { get { return _name; } }
+        public string Name { get { return _name; } }
 
         public ChampionType Type { get { return _type; } }
 
