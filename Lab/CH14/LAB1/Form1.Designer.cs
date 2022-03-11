@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblSendError = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.rtResult = new System.Windows.Forms.RichTextBox();
             this.txtTrackingNum = new System.Windows.Forms.TextBox();
@@ -38,13 +39,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.lblSendError);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.rtResult);
             this.groupBox1.Controls.Add(this.txtTrackingNum);
@@ -60,6 +60,18 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // lblSendError
+            // 
+            this.lblSendError.AutoSize = true;
+            this.lblSendError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSendError.ForeColor = System.Drawing.Color.Red;
+            this.lblSendError.Location = new System.Drawing.Point(54, 322);
+            this.lblSendError.Name = "lblSendError";
+            this.lblSendError.Size = new System.Drawing.Size(290, 16);
+            this.lblSendError.TabIndex = 9;
+            this.lblSendError.Text = "Please Enter a Recipient and Send Date!";
+            this.lblSendError.Visible = false;
             // 
             // label4
             // 
@@ -136,15 +148,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Recipient";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(54, 322);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "label5";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -171,7 +174,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblSendError;
     }
 }
 

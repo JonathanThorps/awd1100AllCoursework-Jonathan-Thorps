@@ -20,5 +20,6 @@ namespace LAB1
         }
 
     public string TrackingNumber { get { return _trackingNumber; } }
+    public override double Price { get { return Price; } }
     }
 }
