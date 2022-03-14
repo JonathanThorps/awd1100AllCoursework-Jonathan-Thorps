@@ -25,22 +25,25 @@ namespace LAB2
             float photoWidth = Convert.ToInt32(txtHeight.Text);
             float photoHeight = Convert.ToInt32(txtHeight.Text);
 
-           // lblOrderResult.Text = base.ToString();
-           // lblCost.Text = Price;
-           if (rbUnframed.Checked)
+            // lblOrderResult.Text = base.ToString();
+            //lblCost.Text = Price;
+            if (rbUnframed.Checked)
             {
                 Photo myPhoto = new Photo(photoWidth, photoHeight);
                 lblOrderResult.Text = myPhoto.ToString();
+                lblCost.Text = myPhoto.Price.ToString("C");
             }
            if (rbMatted.Checked)
             {
                 MattedPhoto myMattedPhoto = new MattedPhoto(photoWidth, photoHeight, photoColor);
                 lblOrderResult.Text = myMattedPhoto.ToString();
+                lblCost.Text = myMattedPhoto.Price.ToString("C");
             }
-           if (rbFramed.Checked)
+            if (rbFramed.Checked)
             {
                 FramedPhoto myFramedPhoto = new FramedPhoto(photoWidth, photoHeight, frameMaterial, frameStyle);
                 lblCost.Text = myFramedPhoto.ToString();
+                lblCost.Text = myFramedPhoto.Price.ToString("C");
             }
         }
 
@@ -51,7 +54,6 @@ namespace LAB2
                 gbColors.Visible = false;
                 gbMaterial.Visible = false;
                 gbStyle.Visible = false;
-                lblOrderResult.Text += ToString();
             }
         }
 

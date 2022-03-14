@@ -18,10 +18,22 @@ namespace LAB2
         }
         public override string ToString()
         {
-            return base.ToString();
+            return base.ToString() + Material + Style;
         }
         public Materials Material { get { return _material; } set { Material = value; } }
         public Styles Style { get { return _style; } set { Style = value; } }
-        public override float Price => base.Price;
+        public override float Price
+        {
+            get
+
+            {
+
+                if (_style != null && _material != null)
+                {
+                    return base.Price + 25f;
+                }
+                return Price;
+            }
+        }
     }
 }
