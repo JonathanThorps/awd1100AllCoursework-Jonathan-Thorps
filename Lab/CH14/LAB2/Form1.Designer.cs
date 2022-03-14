@@ -30,11 +30,11 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtWidth = new System.Windows.Forms.TextBox();
-            this.txtLength = new System.Windows.Forms.TextBox();
+            this.txtHeight = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbColors = new System.Windows.Forms.GroupBox();
             this.gbMaterial = new System.Windows.Forms.GroupBox();
             this.gbStyle = new System.Windows.Forms.GroupBox();
             this.rbUnframed = new System.Windows.Forms.RadioButton();
@@ -61,7 +61,7 @@
             this.lblOrderResult = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbColors.SuspendLayout();
             this.gbMaterial.SuspendLayout();
             this.gbStyle.SuspendLayout();
             this.SuspendLayout();
@@ -72,13 +72,13 @@
             this.groupBox1.Controls.Add(this.btnCalculate);
             this.groupBox1.Controls.Add(this.lblCost);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Controls.Add(this.gbColors);
             this.groupBox1.Controls.Add(this.gbMaterial);
             this.groupBox1.Controls.Add(this.gbStyle);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtLength);
+            this.groupBox1.Controls.Add(this.txtHeight);
             this.groupBox1.Controls.Add(this.txtWidth);
             this.groupBox1.Location = new System.Drawing.Point(95, 12);
             this.groupBox1.Name = "groupBox1";
@@ -94,12 +94,12 @@
             this.txtWidth.Size = new System.Drawing.Size(255, 22);
             this.txtWidth.TabIndex = 0;
             // 
-            // txtLength
+            // txtHeight
             // 
-            this.txtLength.Location = new System.Drawing.Point(101, 61);
-            this.txtLength.Name = "txtLength";
-            this.txtLength.Size = new System.Drawing.Size(255, 22);
-            this.txtLength.TabIndex = 1;
+            this.txtHeight.Location = new System.Drawing.Point(101, 61);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(255, 22);
+            this.txtHeight.TabIndex = 1;
             // 
             // label1
             // 
@@ -115,9 +115,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(32, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 16);
+            this.label2.Size = new System.Drawing.Size(49, 16);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Length:";
+            this.label2.Text = "Height:";
             // 
             // groupBox2
             // 
@@ -131,19 +131,20 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Frame";
             // 
-            // groupBox3
+            // gbColors
             // 
-            this.groupBox3.Controls.Add(this.rbWhite);
-            this.groupBox3.Controls.Add(this.rbBlue);
-            this.groupBox3.Controls.Add(this.rbGreen);
-            this.groupBox3.Controls.Add(this.rbRed);
-            this.groupBox3.Controls.Add(this.rbBlack);
-            this.groupBox3.Location = new System.Drawing.Point(35, 225);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(172, 220);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Color";
+            this.gbColors.Controls.Add(this.rbWhite);
+            this.gbColors.Controls.Add(this.rbBlue);
+            this.gbColors.Controls.Add(this.rbGreen);
+            this.gbColors.Controls.Add(this.rbRed);
+            this.gbColors.Controls.Add(this.rbBlack);
+            this.gbColors.Location = new System.Drawing.Point(35, 225);
+            this.gbColors.Name = "gbColors";
+            this.gbColors.Size = new System.Drawing.Size(172, 220);
+            this.gbColors.TabIndex = 5;
+            this.gbColors.TabStop = false;
+            this.gbColors.Text = "Color";
+            this.gbColors.Visible = false;
             // 
             // gbMaterial
             // 
@@ -158,6 +159,7 @@
             this.gbMaterial.TabIndex = 5;
             this.gbMaterial.TabStop = false;
             this.gbMaterial.Text = "Material";
+            this.gbMaterial.Visible = false;
             // 
             // gbStyle
             // 
@@ -172,6 +174,7 @@
             this.gbStyle.TabIndex = 5;
             this.gbStyle.TabStop = false;
             this.gbStyle.Text = "Style";
+            this.gbStyle.Visible = false;
             // 
             // rbUnframed
             // 
@@ -183,6 +186,7 @@
             this.rbUnframed.TabStop = true;
             this.rbUnframed.Text = "Unframed";
             this.rbUnframed.UseVisualStyleBackColor = true;
+            this.rbUnframed.CheckedChanged += new System.EventHandler(this.rbUnframed_CheckedChanged);
             // 
             // rbMatted
             // 
@@ -194,6 +198,7 @@
             this.rbMatted.TabStop = true;
             this.rbMatted.Text = "Matted";
             this.rbMatted.UseVisualStyleBackColor = true;
+            this.rbMatted.CheckedChanged += new System.EventHandler(this.rbMatted_CheckedChanged);
             // 
             // rbFramed
             // 
@@ -205,6 +210,7 @@
             this.rbFramed.TabStop = true;
             this.rbFramed.Text = "Framed";
             this.rbFramed.UseVisualStyleBackColor = true;
+            this.rbFramed.CheckedChanged += new System.EventHandler(this.rbFramed_CheckedChanged);
             // 
             // rbBlack
             // 
@@ -216,6 +222,7 @@
             this.rbBlack.TabStop = true;
             this.rbBlack.Text = "Black";
             this.rbBlack.UseVisualStyleBackColor = true;
+            this.rbBlack.CheckedChanged += new System.EventHandler(this.rbBlack_CheckedChanged);
             // 
             // rbRed
             // 
@@ -227,6 +234,7 @@
             this.rbRed.TabStop = true;
             this.rbRed.Text = "Red";
             this.rbRed.UseVisualStyleBackColor = true;
+            this.rbRed.CheckedChanged += new System.EventHandler(this.rbRed_CheckedChanged);
             // 
             // rbGreen
             // 
@@ -238,6 +246,7 @@
             this.rbGreen.TabStop = true;
             this.rbGreen.Text = "Green";
             this.rbGreen.UseVisualStyleBackColor = true;
+            this.rbGreen.CheckedChanged += new System.EventHandler(this.rbGreen_CheckedChanged);
             // 
             // rbBlue
             // 
@@ -249,6 +258,7 @@
             this.rbBlue.TabStop = true;
             this.rbBlue.Text = "Blue";
             this.rbBlue.UseVisualStyleBackColor = true;
+            this.rbBlue.CheckedChanged += new System.EventHandler(this.rbBlue_CheckedChanged);
             // 
             // rbWhite
             // 
@@ -260,6 +270,7 @@
             this.rbWhite.TabStop = true;
             this.rbWhite.Text = "White";
             this.rbWhite.UseVisualStyleBackColor = true;
+            this.rbWhite.CheckedChanged += new System.EventHandler(this.rbWhite_CheckedChanged);
             // 
             // rbPine
             // 
@@ -271,6 +282,7 @@
             this.rbPine.TabStop = true;
             this.rbPine.Text = "Pine";
             this.rbPine.UseVisualStyleBackColor = true;
+            this.rbPine.CheckedChanged += new System.EventHandler(this.rbPine_CheckedChanged);
             // 
             // rbOak
             // 
@@ -282,6 +294,7 @@
             this.rbOak.TabStop = true;
             this.rbOak.Text = "Oak";
             this.rbOak.UseVisualStyleBackColor = true;
+            this.rbOak.CheckedChanged += new System.EventHandler(this.rbOak_CheckedChanged);
             // 
             // rbSteel
             // 
@@ -293,6 +306,7 @@
             this.rbSteel.TabStop = true;
             this.rbSteel.Text = "Steel";
             this.rbSteel.UseVisualStyleBackColor = true;
+            this.rbSteel.CheckedChanged += new System.EventHandler(this.rbSteel_CheckedChanged);
             // 
             // rbSilver
             // 
@@ -304,6 +318,7 @@
             this.rbSilver.TabStop = true;
             this.rbSilver.Text = "Silver";
             this.rbSilver.UseVisualStyleBackColor = true;
+            this.rbSilver.CheckedChanged += new System.EventHandler(this.rbSilver_CheckedChanged);
             // 
             // rbGold
             // 
@@ -315,6 +330,7 @@
             this.rbGold.TabStop = true;
             this.rbGold.Text = "Gold";
             this.rbGold.UseVisualStyleBackColor = true;
+            this.rbGold.CheckedChanged += new System.EventHandler(this.rbGold_CheckedChanged);
             // 
             // rbSimple
             // 
@@ -326,6 +342,7 @@
             this.rbSimple.TabStop = true;
             this.rbSimple.Text = "Simple";
             this.rbSimple.UseVisualStyleBackColor = true;
+            this.rbSimple.CheckedChanged += new System.EventHandler(this.rbSimple_CheckedChanged);
             // 
             // rbModern
             // 
@@ -337,6 +354,7 @@
             this.rbModern.TabStop = true;
             this.rbModern.Text = "Modern";
             this.rbModern.UseVisualStyleBackColor = true;
+            this.rbModern.CheckedChanged += new System.EventHandler(this.rbModern_CheckedChanged);
             // 
             // rbAntique
             // 
@@ -348,6 +366,7 @@
             this.rbAntique.TabStop = true;
             this.rbAntique.Text = "Antique";
             this.rbAntique.UseVisualStyleBackColor = true;
+            this.rbAntique.CheckedChanged += new System.EventHandler(this.rbAntique_CheckedChanged);
             // 
             // rbVintage
             // 
@@ -359,6 +378,7 @@
             this.rbVintage.TabStop = true;
             this.rbVintage.Text = "Vintage";
             this.rbVintage.UseVisualStyleBackColor = true;
+            this.rbVintage.CheckedChanged += new System.EventHandler(this.rbVintage_CheckedChanged);
             // 
             // rbEcclectic
             // 
@@ -370,6 +390,7 @@
             this.rbEcclectic.TabStop = true;
             this.rbEcclectic.Text = "Ecclectic";
             this.rbEcclectic.UseVisualStyleBackColor = true;
+            this.rbEcclectic.CheckedChanged += new System.EventHandler(this.rbEcclectic_CheckedChanged);
             // 
             // label3
             // 
@@ -418,8 +439,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbColors.ResumeLayout(false);
+            this.gbColors.PerformLayout();
             this.gbMaterial.ResumeLayout(false);
             this.gbMaterial.PerformLayout();
             this.gbStyle.ResumeLayout(false);
@@ -435,7 +456,7 @@
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Label lblCost;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbColors;
         private System.Windows.Forms.RadioButton rbWhite;
         private System.Windows.Forms.RadioButton rbBlue;
         private System.Windows.Forms.RadioButton rbGreen;
@@ -459,7 +480,7 @@
         private System.Windows.Forms.RadioButton rbFramed;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtLength;
+        private System.Windows.Forms.TextBox txtHeight;
         private System.Windows.Forms.TextBox txtWidth;
     }
 }

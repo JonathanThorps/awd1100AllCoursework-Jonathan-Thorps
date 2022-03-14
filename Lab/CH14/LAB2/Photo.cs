@@ -23,6 +23,23 @@ namespace LAB2
         }
         public float Width { get { return _width; } set { Width = value; } }
         public float Height { get { return _height; } set { Height = value; } }
-        public virtual float Price { get {return Price; }
+        public virtual float Price
+        { get
+
+            {
+                if (_width == 8 && _height == 10 || _width == 10 && _height == 8)
+                {
+                    return base.Price = 3.99;
+                } 
+                else if (_width == 10 && _height == 12 || _width == 12 && _height == 10)
+                {
+                    return base.Price = 5.99;
+                } 
+                else
+                {
+                    return base.Price = 9.99;
+                }
+                    
+            }
     }
 }

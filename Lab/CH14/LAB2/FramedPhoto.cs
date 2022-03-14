@@ -20,7 +20,8 @@ namespace LAB2
         {
             return base.ToString();
         }
-        public Materials Material { get { return _material; }  set { Material = value; } }
-        public Styles Style { get { return _style; }  set { Style = value; } }
+        public Materials Material { get { return _material; } set { Material = value; } }
+        public Styles Style { get { return _style; } set { Style = value; } }
+        public override float Price => base.Price;
     }
 }
