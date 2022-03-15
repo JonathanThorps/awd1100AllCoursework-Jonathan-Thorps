@@ -18,7 +18,7 @@ namespace LAB2
         }
         public override string ToString()
         {
-            return base.ToString() + Color;
+            return base.ToString();
         }
         public Colors Color { get { return _color; } set { Color = value; } }
         public override float Price

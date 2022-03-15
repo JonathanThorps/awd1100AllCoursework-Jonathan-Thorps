@@ -18,7 +18,7 @@ namespace LAB2
         }
         public override string ToString()
         {
-            return base.ToString() + Material + Style;
+            return base.ToString();
         }
         public Materials Material { get { return _material; } set { Material = value; } }
         public Styles Style { get { return _style; } set { Style = value; } }
