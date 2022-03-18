@@ -15,7 +15,7 @@ namespace SampleExam
         string[] doubleAgents = new string[7] { "Aldrich Ames", "Mathilde Carre", "Oleg Penkovsky", "Donald Mclean",
                 "Margaretha Geertrudia MacLeod", "Matei Pavel Haiduca", "Brian Nelson" };
         string[] agencies = new string[7] { "CIA", "None", "GRU", "None", "None", "Department of State Security", "Ulster Defense Association" };
-        string[] nationalities = new string[7] { "American", "French", "Russian", "British", "Dutch", "Romanian", "Irish" };
+        string[] nationality = new string[7] { "American", "French", "Russian", "British", "Dutch", "Romanian", "Irish" };
         public Form1()
         {
             InitializeComponent();
@@ -32,7 +32,9 @@ namespace SampleExam
         }
         public void SearchByName(string spyName)
         {
-            for (int i = 0; i < doubleAgents; i++)
+            int agentPosition = -1;
+
+            for (int i = 0; i < doubleAgents.Length; i++)
             {
                 if (string.IsNullOrEmpty(spyName))
                 {
@@ -50,7 +52,9 @@ namespace SampleExam
         }
         public void SearchByNationality(string spyNation)
         {
-            for (int i = 0; i < nationality[i]; i++)
+            int nationalityPosition = -1;
+
+            for (int i = 0; i < nationality.Length; i++)
             {
                 if (string.IsNullOrEmpty(spyNation))
                 {
@@ -68,7 +72,9 @@ namespace SampleExam
         }
         public void SearchByAgency(string spyAgency)
         {
-            for (int i = 0; i < agencies[i]; i++)
+            int agencyPosition = -1;
+
+            for (int i = 0; i < agencies.Length; i++)
             {
                 if (string.IsNullOrEmpty(spyAgency))
                 {
