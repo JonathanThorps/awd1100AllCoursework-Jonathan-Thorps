@@ -8,6 +8,9 @@ namespace LAB4
 {
     public class IncorrectPasswordException : Exception
     {
+        public IncorrectPasswordException(string message) : base(message)
+        {
 
+        }
     }
 }

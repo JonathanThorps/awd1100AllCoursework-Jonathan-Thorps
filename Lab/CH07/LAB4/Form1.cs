@@ -17,7 +17,7 @@ namespace LAB4
             new Account ("pmccartney", "wings", "Paul", false),
             new Account ("rstarr", "allstarr", "Ringo", false),
             new Account ("gharrison", "wilburys", "George", false),
-            new Account ("jlennon", "", "John", false)
+            new Account ("jlennon", "imagine", "John", false)
         };
         public Form1()
         {
@@ -28,12 +28,16 @@ namespace LAB4
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
+            int errorCount = 0;
 
             try
             {
                 for (int i = 0; i < accounts.Count; i++)
                 {
-                    
+                    if (accounts[i].Username == username && accounts[i].Password == password)
+                    {
+                        lblWelcome.Text = "Welcome back" + accounts[i].FirstName + "!";
+                    }
                 }
             }
             catch(NoUsernamePasswordException)
@@ -42,11 +46,20 @@ namespace LAB4
             }
             catch(IncorrectPasswordException)
             {
-                lblWelcome.Text = "Incorrect Password";
+                if (accounts[i].Password != password)
+                {
+                    errorCount++;
+                    lblWelcome.Text = "Incorrect Password";
+                }
+                
             }
             catch(AccountDisabledException)
             {
-                lblWelcome.Text = "Your account has been disabled";
+                if (errorCount > 3)
+                {
+                    accounts[i].IsDisabled = true;
+                    lblWelcome.Text = "Your account has been disabled";
+                }  
             }
         }
     }
