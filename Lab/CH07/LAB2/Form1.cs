@@ -19,20 +19,25 @@ namespace LAB2
 
         private void btnValidate_Click(object sender, EventArgs e)
         {
-            short itemNumber = (short)Convert.ToInt32(txtItemNum.Text);
-            byte quantity = Convert.ToByte(txtQuantity.Text);
-            byte estimatedDelivery = Convert.ToByte(txtDeliveryDays.Text);
-
             try
             {
+                short itemNumber = (short)Convert.ToInt32(txtItemNum.Text);
+                byte quantity = Convert.ToByte(txtQuantity.Text);
+                byte estimatedDelivery = Convert.ToByte(txtDeliveryDays.Text);
 
             }
-            catch
+            catch(InvalidNumberException)
             {
-
+                lblValidation.Text = "Order is Invalid!";
             }
-            lblValidation.Text = "Order is Valid";
-            lblValidation.Text = "Order is Invalid!";
+            catch(InvalidQuantityException)
+            {
+                lblValidation.Text = "Order is Invalid!";
+            }
+            catch(InvalidDeliveryDaysException)
+            {
+                lblValidation.Text = "Order is Invalid!";
+            }
         }
     }
 }

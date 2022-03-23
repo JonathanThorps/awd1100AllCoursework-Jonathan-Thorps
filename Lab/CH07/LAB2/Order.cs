@@ -22,14 +22,17 @@ namespace LAB2
             {
                 throw new InvalidNumberException("Order is Invalid");
             }
-            if (quantity < 1 || quantity > 12)
+           
+            if(quantity < 1 || quantity > 12)
             {
                 throw new InvalidQuantityException("Order is Invalid");
             }
+           
             if (estimatedDeliveryDays < 1 || estimatedDeliveryDays > 30)
             {
                 throw new InvalidDeliveryDaysException("Order is Invalid");
             }
+         
         }
         public short ItemNumber { get { return _itemNumber; } set => value = ItemNumber; }
         public byte Quantity { get { return _quantity; } set => value = Quantity; }

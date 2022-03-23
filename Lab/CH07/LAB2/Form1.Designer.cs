@@ -134,27 +134,27 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(246, 61);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
+            this.label5.Size = new System.Drawing.Size(73, 16);
             this.label5.TabIndex = 8;
-            this.label5.Text = "[ 100-999 ]";
+            this.label5.Text = "[ 100 - 999 ]";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(246, 122);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 16);
+            this.label6.Size = new System.Drawing.Size(52, 16);
             this.label6.TabIndex = 9;
-            this.label6.Text = "[ 1-12 ]";
+            this.label6.Text = "[ 1 - 12 ]";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(246, 182);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 16);
+            this.label7.Size = new System.Drawing.Size(52, 16);
             this.label7.TabIndex = 10;
-            this.label7.Text = "[ 1-30 ]";
+            this.label7.Text = "[ 1 - 30 ]";
             // 
             // Form1
             // 
