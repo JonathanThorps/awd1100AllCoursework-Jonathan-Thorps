@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LAB3
+namespace LAB4
 {
-    public class InvalidCharacterException : System.Exception
+    public class BankForm : System.Windows.Forms.Form
     {
-        public InvalidCharacterException(string message) : base(message)
+        public Account Login(string username, string password)
         {
 
         }

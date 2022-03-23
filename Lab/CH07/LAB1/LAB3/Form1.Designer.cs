@@ -33,15 +33,19 @@
             this.txtCypher = new System.Windows.Forms.TextBox();
             this.btnEncode = new System.Windows.Forms.Button();
             this.btnDecode = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtShift = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblCharError = new System.Windows.Forms.Label();
+            this.lblCharError1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblCharError1);
+            this.groupBox1.Controls.Add(this.lblCharError);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtShift);
             this.groupBox1.Controls.Add(this.btnDecode);
             this.groupBox1.Controls.Add(this.btnEncode);
             this.groupBox1.Controls.Add(this.txtCypher);
@@ -75,6 +79,7 @@
             this.btnEncode.TabIndex = 2;
             this.btnEncode.Text = "Encode";
             this.btnEncode.UseVisualStyleBackColor = true;
+            this.btnEncode.Click += new System.EventHandler(this.btnEncode_Click);
             // 
             // btnDecode
             // 
@@ -84,13 +89,14 @@
             this.btnDecode.TabIndex = 3;
             this.btnDecode.Text = "Decode";
             this.btnDecode.UseVisualStyleBackColor = true;
+            this.btnDecode.Click += new System.EventHandler(this.btnDecode_Click);
             // 
-            // textBox3
+            // txtShift
             // 
-            this.textBox3.Location = new System.Drawing.Point(605, 146);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 4;
+            this.txtShift.Location = new System.Drawing.Point(605, 146);
+            this.txtShift.Name = "txtShift";
+            this.txtShift.Size = new System.Drawing.Size(100, 22);
+            this.txtShift.TabIndex = 4;
             // 
             // label1
             // 
@@ -100,6 +106,30 @@
             this.label1.Size = new System.Drawing.Size(32, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "Shift";
+            // 
+            // lblCharError
+            // 
+            this.lblCharError.AutoSize = true;
+            this.lblCharError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCharError.ForeColor = System.Drawing.Color.Red;
+            this.lblCharError.Location = new System.Drawing.Point(25, 114);
+            this.lblCharError.Name = "lblCharError";
+            this.lblCharError.Size = new System.Drawing.Size(220, 16);
+            this.lblCharError.TabIndex = 6;
+            this.lblCharError.Text = "Invalid Characters In Message!";
+            this.lblCharError.Visible = false;
+            // 
+            // lblCharError1
+            // 
+            this.lblCharError1.AutoSize = true;
+            this.lblCharError1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCharError1.ForeColor = System.Drawing.Color.Red;
+            this.lblCharError1.Location = new System.Drawing.Point(25, 262);
+            this.lblCharError1.Name = "lblCharError1";
+            this.lblCharError1.Size = new System.Drawing.Size(220, 16);
+            this.lblCharError1.TabIndex = 7;
+            this.lblCharError1.Text = "Invalid Characters In Message!";
+            this.lblCharError1.Visible = false;
             // 
             // Form1
             // 
@@ -119,11 +149,13 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtShift;
         private System.Windows.Forms.Button btnDecode;
         private System.Windows.Forms.Button btnEncode;
         private System.Windows.Forms.TextBox txtCypher;
         private System.Windows.Forms.TextBox txtPlain;
+        private System.Windows.Forms.Label lblCharError1;
+        private System.Windows.Forms.Label lblCharError;
     }
 }
 

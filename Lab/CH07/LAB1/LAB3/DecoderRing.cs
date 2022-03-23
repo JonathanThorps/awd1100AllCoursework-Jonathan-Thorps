@@ -6,7 +6,49 @@ using System.Threading.Tasks;
 
 namespace LAB3
 {
-    internal class DecoderRing
+    public class DecoderRing
     {
+        private int _shift;
+        private string _innerRing;
+        private string _outerRing;
+
+        public DecoderRing()
+        {
+
+        }
+        public Decode(string text)
+        {
+            _innerRing = text;
+
+            for (int i = 0; i < text.Length; i++)
+            {
+                char c = text[i];
+
+                if (text == null)
+                {
+                    throw new InvalidCharacterException("Invalid Characters");
+                }
+            }
+        }
+            
+        public Encoder(string text)
+        {
+            _outerRing = text;
+
+            for (var i = 0; i < text.Length; i++)
+            {
+                char ch = text[i];
+
+                if (text == null)
+                {
+                    throw new InvalidCharacterException("Invalid Characters");
+                }
+            }
+            
+        }
+        public int Shift()
+        {
+
+        }
     }
 }
