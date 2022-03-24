@@ -22,45 +22,48 @@ namespace LAB4
         public Form1()
         {
             InitializeComponent();
+            BankForm.Login();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
             int errorCount = 0;
 
-            try
+            for (int i = 0; i < accounts.Count; i++)
             {
-                for (int i = 0; i < accounts.Count; i++)
+                Account account = accounts[i];
+
+                try
                 {
                     if (accounts[i].Username == username && accounts[i].Password == password)
                     {
-                        lblWelcome.Text = "Welcome back" + accounts[i].FirstName + "!";
+                    lblWelcome.Text = "Welcome back " + accounts[i].FirstName + "!";
+                    }
+                }
+                catch (NoUsernamePasswordException)
+                {
+                    lblWelcome.Text = "Please enter a username and password";
+                }
+                catch (IncorrectPasswordException)
+                {
+                    if (accounts[i].Password != password)
+                    {
+                        errorCount++;
+                        lblWelcome.Text = "Incorrect Password";
+                    }
+                }
+                catch (AccountDisabledException)
+                {
+                    if (errorCount > 3)
+                    {
+                        accounts[i].IsDisabled = true;
+                        lblWelcome.Text = "Your account has been disabled";
                     }
                 }
             }
-            catch(NoUsernamePasswordException)
-            {
-                lblWelcome.Text = "Please enter a username and password";
-            }
-            catch(IncorrectPasswordException)
-            {
-                if (accounts[i].Password != password)
-                {
-                    errorCount++;
-                    lblWelcome.Text = "Incorrect Password";
-                }
-                
-            }
-            catch(AccountDisabledException)
-            {
-                if (errorCount > 3)
-                {
-                    accounts[i].IsDisabled = true;
-                    lblWelcome.Text = "Your account has been disabled";
-                }  
-            }
+            
         }
     }
 }
