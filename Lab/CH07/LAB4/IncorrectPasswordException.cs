@@ -10,7 +10,7 @@ namespace LAB4
     {
         public IncorrectPasswordException(string message) : base(message)
         {
-
+        
         }
     }
 }
