@@ -44,7 +44,7 @@ namespace LAB4
                 }
                 catch (IncorrectPasswordException)
                 {
-                    lblWelcome.Text = "Invalid Password! Please try again.";
+                    lblWelcome.Text = "Invalid Username or Password! Please try again.";
                 }
                 catch (AccountDisabledException)
                 {
@@ -54,6 +54,11 @@ namespace LAB4
 
         public Account Login(string username,string password)
         {
+            if (string.IsNullOrEmpty(username) && string.IsNullOrEmpty(password))
+            {
+                throw new NoUsernamePasswordException("No username or password");
+            }
+
             Account searchAccount = null;
             int errorCount = 0;
 
@@ -64,25 +69,25 @@ namespace LAB4
                 if (accounts[i].Username == username && accounts[i].Password == password && accounts[i].IsDisabled == false)
                 {
                     searchAccount = accounts[i];
+
+                    if(searchAccount.IsDisabled)
+                    {
+                        throw new AccountDisabledException("Account disabled");
+                    }
                     return searchAccount;
                 }
-                else if (accounts[i].Password == password && accounts[i].Username == username && accounts[i].IsDisabled == true)
-                {
-                    searchAccount = accounts[i];
-                    return searchAccount;
-                    throw new AccountDisabledException("Account disabled");
-                }
-
-                if (string.IsNullOrEmpty(username) && string.IsNullOrEmpty(password))
-                {
-                    throw new NoUsernamePasswordException("No username or password");
-                }
-
-                if (accounts[i].Password != password)
+                else if (accounts[i].Username == username && accounts[i].Password != password || 
+                    accounts[i].Username != username && accounts[i].Password == password)
                 {
                     errorCount++;
-                    throw new IncorrectPasswordException("Incorrect Password");
+                    throw new IncorrectPasswordException("Username or Password Incorrect");
                 }
+                //else if (accounts[i].Password == password && accounts[i].Username == username && accounts[i].IsDisabled == true)
+                //{
+                //    searchAccount = accounts[i];
+                //    return searchAccount;
+                   
+                //}          
 
                 if (errorCount > 3)
                 {
@@ -90,6 +95,13 @@ namespace LAB4
                     throw new AccountDisabledException("Account disabled");
                 }
             }
+
+            if (searchAccount == null)
+            {
+                    throw new IncorrectPasswordException("Incorrect Username or Password");
+            }
+
+            return searchAccount;
         }
     }
 }

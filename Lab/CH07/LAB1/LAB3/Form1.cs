@@ -12,6 +12,7 @@ namespace LAB3
 {
     public partial class Form1 : Form
     {
+        string[] c = { "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,O,Q,R,S,T,U,V,W,X,Y,Z" };
         public Form1()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace LAB3
 
                 for (int i = 0; i < plainText.Length; i++)
                 {
-                    plainText = plainText.Substring(i, plainText.Length - i);
+                    plainText = plainText.Substring(i, plainText.Length + c.Length + shift);
                 }
             }
             catch(InvalidCharacterException)
@@ -44,7 +45,7 @@ namespace LAB3
 
                 for (int i = 0; i < cypherText.Length; i++)
                 {
-                    cypherText = cypherText.Substring(i, cypherText.Length - i);
+                    cypherText = cypherText.Substring(i, cypherText.Length - c.Length + shift);
                 }
             }
             catch (InvalidCharacterException)

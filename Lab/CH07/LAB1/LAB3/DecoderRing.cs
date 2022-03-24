@@ -12,9 +12,11 @@ namespace LAB3
         private string _innerRing;
         private string _outerRing;
 
-        public DecoderRing()
+        public DecoderRing(string innerRing, string outerRing, int shift)
         {
-
+            _innerRing = innerRing;
+            _outerRing = outerRing;
+            _shift = 0;
         }
         public Decode(string text)
         {
@@ -46,7 +48,7 @@ namespace LAB3
             }
             
         }
-        public int Shift()
+        public int Shift(int shift)
         {
 
         }
