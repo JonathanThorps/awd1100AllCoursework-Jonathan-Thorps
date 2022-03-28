@@ -14,15 +14,19 @@ namespace EX1
         private float _min;
         private float _max;
 
-        public TestStatistics()
+        public TestStatistics(float sum, float avg, float min, float max)
         {
-            
+            _avg = avg;
+            _min = min;
+            _max = max;
+            _sum = sum;
         }
-        public float AddScore(float score)
+        public TestStatistics AddScore(float score)
         {
             _min = 0;
             _max = 0;
             _count = 0;
+
             while (_count > 0)
             {
                 _sum = _sum + score;
