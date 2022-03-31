@@ -16,14 +16,15 @@ namespace LAB2
 
         Job[] itJobs =
         {
-            new Job("Junior Software Devolper", new LinkLabel.Link(){LinkData="https://jobs.boeing.com/job/maryland-heights/mid-level-database-developer-administrator-remote/185/25751278976"})
+            new Job("Junior Software Devolper", new LinkLabel.Link(){LinkData="https://jobs.boeing.com/job/maryland-heights/mid-level-database-developer-administrator-remote/185/25751278976"}),
+            new Job("Generalist Programmer", new LinkLabel.Link(){LinkData="https://gearboxsoftware.bamboohr.com/jobs/view.php?id=329"}),
+            new Job("Web Developer", new LinkLabel.Link(){LinkData="https://www.dice.com/jobs/detail/Web-Developer-SAIC-Arnold-MO-63010/10111346/2202267"})
         };
 
         Job[] autoJobs =
         {
             new Job("Service Technician", new LinkLabel.Link(){LinkData="https://www.tesla.com/careers/search/job/service-technician-st-louis-mo-116359"})
         };
-
 
         Job[] elexJobs =
         {
@@ -47,7 +48,7 @@ namespace LAB2
 
         Job[] hvacJobs =
         {
-            new Job("", new LinkLabel.Link(){LinkData=""})
+            new Job("HVAC Service Technician", new LinkLabel.Link(){LinkData="https://www.galmicheandsons.com/hvac-technician-jobs.html"})
         };
 
         public JobDatabase()
@@ -68,11 +69,11 @@ namespace LAB2
 
         private void listIndustry_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selectedIndustries = new Industry[listIndustry.Items.Count];
+            selectedIndustries = new Industry[listIndustry.SelectedItems.Count];
 
             for (int i = 0; i < listIndustry.SelectedItems.Count; i++)
             {
-                selectedIndustries[i] = (Industry)listIndustry.SelectedItem;
+                selectedIndustries[i] = (Industry)listIndustry.SelectedItems[i];
             }
         }
 
