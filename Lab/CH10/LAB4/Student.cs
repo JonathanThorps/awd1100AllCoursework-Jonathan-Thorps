@@ -24,11 +24,11 @@ namespace LAB4
 
             if (string.IsNullOrEmpty(_firstName))
             {
-                throw new StudentException(string message)
+                throw new StudentException(string message);
             }
             if (string.IsNullOrEmpty(_lastName))
             {
-                throw new StudentException(string message)
+                throw new StudentException(string message);
             }
         }
         public string FirstName { get { return _firstName; } }

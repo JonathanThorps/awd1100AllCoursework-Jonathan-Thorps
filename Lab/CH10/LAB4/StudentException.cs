@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LAB4
 {
-    internal class StudentException
+    public class StudentException
     {
         public StudentException(string message) : base(message)
         {
