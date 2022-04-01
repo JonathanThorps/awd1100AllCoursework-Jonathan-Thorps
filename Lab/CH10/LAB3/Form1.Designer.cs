@@ -47,6 +47,7 @@
             this.txtOne.Text = "1";
             this.txtOne.Click += new System.EventHandler(this.AnyTextbox_Click);
             this.txtOne.Enter += new System.EventHandler(this.AnyTextbox_Focus);
+            this.txtOne.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnyTextbox_KeyDown);
             this.txtOne.Leave += new System.EventHandler(this.AnyTextbox_Leave);
             // 
             // txtTwo
@@ -58,6 +59,7 @@
             this.txtTwo.Text = "2";
             this.txtTwo.Click += new System.EventHandler(this.AnyTextbox_Click);
             this.txtTwo.Enter += new System.EventHandler(this.AnyTextbox_Focus);
+            this.txtTwo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnyTextbox_KeyDown);
             this.txtTwo.Leave += new System.EventHandler(this.AnyTextbox_Leave);
             // 
             // txtThree
@@ -69,6 +71,7 @@
             this.txtThree.Text = "3";
             this.txtThree.Click += new System.EventHandler(this.AnyTextbox_Click);
             this.txtThree.Enter += new System.EventHandler(this.AnyTextbox_Focus);
+            this.txtThree.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnyTextbox_KeyDown);
             this.txtThree.Leave += new System.EventHandler(this.AnyTextbox_Leave);
             // 
             // txtFour
@@ -80,6 +83,7 @@
             this.txtFour.Text = "4";
             this.txtFour.Click += new System.EventHandler(this.AnyTextbox_Click);
             this.txtFour.Enter += new System.EventHandler(this.AnyTextbox_Focus);
+            this.txtFour.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnyTextbox_KeyDown);
             this.txtFour.Leave += new System.EventHandler(this.AnyTextbox_Leave);
             // 
             // txtFive
@@ -91,6 +95,7 @@
             this.txtFive.Text = "5";
             this.txtFive.Click += new System.EventHandler(this.AnyTextbox_Click);
             this.txtFive.Enter += new System.EventHandler(this.AnyTextbox_Focus);
+            this.txtFive.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnyTextbox_KeyDown);
             this.txtFive.Leave += new System.EventHandler(this.AnyTextbox_Leave);
             // 
             // txtSix
@@ -102,6 +107,7 @@
             this.txtSix.Text = "6";
             this.txtSix.Click += new System.EventHandler(this.AnyTextbox_Click);
             this.txtSix.Enter += new System.EventHandler(this.AnyTextbox_Focus);
+            this.txtSix.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnyTextbox_KeyDown);
             this.txtSix.Leave += new System.EventHandler(this.AnyTextbox_Leave);
             // 
             // txtSeven
@@ -113,6 +119,7 @@
             this.txtSeven.Text = "7";
             this.txtSeven.Click += new System.EventHandler(this.AnyTextbox_Click);
             this.txtSeven.Enter += new System.EventHandler(this.AnyTextbox_Focus);
+            this.txtSeven.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnyTextbox_KeyDown);
             this.txtSeven.Leave += new System.EventHandler(this.AnyTextbox_Leave);
             // 
             // txtEight
@@ -124,6 +131,7 @@
             this.txtEight.Text = "8";
             this.txtEight.Click += new System.EventHandler(this.AnyTextbox_Click);
             this.txtEight.Enter += new System.EventHandler(this.AnyTextbox_Focus);
+            this.txtEight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnyTextbox_KeyDown);
             this.txtEight.Leave += new System.EventHandler(this.AnyTextbox_Leave);
             // 
             // Form1

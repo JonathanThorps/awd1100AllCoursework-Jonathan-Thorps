@@ -34,5 +34,24 @@ namespace LAB3
             TextBox t = (TextBox)sender;
             t.BackColor = Color.LightGray;
         }
+
+        private void AnyTextbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch(e.KeyCode)
+            {
+                case Keys.Up:
+                    txtOne.Focus();
+                    break;
+                case Keys.Right:
+                    txtThree.Focus();
+                    break;
+                case Keys.Down:
+                    txtFive.Focus();
+                    break;
+                case Keys.Left:
+                    txtSeven.Focus();
+                    break;
+            }
+        }
     }
 }
