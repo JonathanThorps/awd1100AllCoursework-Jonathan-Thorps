@@ -54,7 +54,7 @@ namespace HOT6_Retake
         private void btnNumSearch_Click(object sender, EventArgs e)
         {
             int pokedexNum = Convert.ToInt32(txtNumBox.Text);
-            ShowPokemon();
+            ShowPokemon(pokedexNum);
             SearchByPokedexNumber(pokedexNum);
         }
 
@@ -66,11 +66,12 @@ namespace HOT6_Retake
         }
         private int SearchByType(string type)
         {
+            int searchPosition = -1;
             for (int i = 0; i < pokemonType.Length; i++)
             {
                 if (type.ToLower().Contains(pokemonType[i].ToLower()))
                 {
-                    return pokemonType[i];
+                    searchPosition =i;
                 }
                 else
                 {
@@ -80,6 +81,7 @@ namespace HOT6_Retake
                     lblPokedexNum.Text = errorMsg;
                 }
             }
+            return searchPosition;
         }
         private int SearchByPokedexNumber(int num)
         {

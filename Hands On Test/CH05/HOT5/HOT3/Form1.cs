@@ -16,7 +16,7 @@ namespace HOT3
             decimal area = length * width;
 
             int season = Convert.ToInt32(seasonLength.Text);
-
+            int weeklyFee;
 
             if (area >= 600)
                     weekFee = 50; wklyFee.Text = Convert.ToString(weekFee);

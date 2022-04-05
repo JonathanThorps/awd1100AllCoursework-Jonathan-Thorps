@@ -25,6 +25,8 @@ namespace LAB2
                 byte quantity = Convert.ToByte(txtQuantity.Text);
                 byte estimatedDelivery = Convert.ToByte(txtDeliveryDays.Text);
 
+                Order myOrder = new Order(itemNumber, quantity, estimatedDelivery);
+
             }
             catch(InvalidNumberException)
             {

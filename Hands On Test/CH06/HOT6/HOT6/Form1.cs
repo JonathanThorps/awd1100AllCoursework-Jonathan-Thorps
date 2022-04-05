@@ -2,13 +2,13 @@ namespace HOT6
 {
     public partial class Form1 : Form
     {
-        string[] name = new string[5]
+        string[] name = 
         {
-            name[0] = "The Great Gatsby",
-            name[1] = "War and Peace",
-            name[2] = "Moby Dick",
-            name[3] = "Hamlet",
-            name[4] = "Pride and Prejudice"
+            "The Great Gatsby",
+            "War and Peace",
+            "Moby Dick",
+            "Hamlet",
+           "Pride and Prejudice"
         };
 
         string[] description = new string[5]
@@ -65,16 +65,19 @@ namespace HOT6
             SearchByKeyword();
             ShowBook();
         }
-   
+
         private int SearchByAuthor(string authorName)
         {
+            int position = -1;
             for (int i = 0; i < author.Length; i++)
+            {
+                if (authorName.ToLower().Contains(author[i].ToLower()))
                 {
-                if (authorName.ToLower().Contains(author[i]))
-                   {
-                   return author[i];
-                   }
-        }             
+                    position = i;
+                }
+            } }
+        
+        return position;
                         
     private int SearchByIsbn(string isbnCode)
     {
