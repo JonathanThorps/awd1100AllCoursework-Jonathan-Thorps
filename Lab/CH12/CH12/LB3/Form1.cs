@@ -29,7 +29,7 @@ namespace LB3
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string searchTerm = txtChampSearch.Text;
-
+            bool foundChamp = false;
             for (int i = 0; i < champions.Count; i++)
             {
                 if (champions[i].Name.ToLower().Contains(searchTerm.ToLower()))
@@ -41,12 +41,19 @@ namespace LB3
                     lblQAttack.Text = champions[i].Q.ToString();
                     lblFAttack.Text = champions[i].F.ToString();
                     lblEAttack.Text = champions[i].E.ToString();
+                    foundChamp = true;
                 }
-                else
-                {
-                    lblChampion.Text = "Champion Not Found";
-                }
+               
             }
+
+            if(!foundChamp)
+            {
+                
+                    lblChampion.Text = "Champion Not Found";
+                
+            }
+
+
         }
     }
 }
