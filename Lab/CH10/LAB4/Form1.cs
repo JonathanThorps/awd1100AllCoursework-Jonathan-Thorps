@@ -27,13 +27,14 @@ namespace LAB4
 
         private void btnSearchFirstName_Click(object sender, EventArgs e)
         {
-            string firstName = txtFirstName.Text;
-
+            
             try
             {
+                string firstName = txtFirstName.Text;
+
                 for (int i = 0; i < students.Count; i++)
                 {
-                    if (students[i].FirstName.ToLower().Contains(firstName))
+                    if (students[i].FirstName.ToLower() == firstName)
                     {
                         lblStudentName.Text = students[i].FirstName + students[i].LastName;
                         lblCourseName.Text = students[i].Course;
@@ -51,13 +52,14 @@ namespace LAB4
 
         private void btnSearchLastName_Click(object sender, EventArgs e)
         {
-            string lastName = txtLastName.Text;
-
+            
             try
-            {
+            { 
+                string lastName = txtLastName.Text;
+             
                 for (int i = 0; i < students.Count; i++)
                 {
-                    if (students[i].LastName.ToLower().Contains(lastName))
+                    if (students[i].LastName.ToLower() == lastName)
                     {
                         lblStudentName.Text = students[i].FirstName + students[i].LastName;
                         lblCourseName.Text = students[i].Course;
@@ -76,7 +78,7 @@ namespace LAB4
 
         private void txtFirstName_KeyDown(object sender, KeyEventArgs e)
         {
-            if(Convert.ToInt32(e.KeyCode) == 13)
+            if (Convert.ToInt32(e.KeyCode) == 13)
             {
                 btnSearchFirstName.PerformClick();
             }

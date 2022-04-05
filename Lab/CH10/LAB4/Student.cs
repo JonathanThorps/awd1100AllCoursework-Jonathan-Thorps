@@ -22,13 +22,13 @@ namespace LAB4
             _grade = grade;
             _gpa = gpa;
 
-            if (string.IsNullOrEmpty(_firstName))
+            if (string.IsNullOrEmpty(firstName))
             {
-                throw new StudentException(string message);
+                throw new StudentException("First Name can't be blank");
             }
-            if (string.IsNullOrEmpty(_lastName))
+            if (string.IsNullOrEmpty(lastName))
             {
-                throw new StudentException(string message);
+                throw new StudentException("Last Name can't be blank");
             }
         }
         public string FirstName { get { return _firstName; } }
