@@ -13,7 +13,7 @@ namespace LAB5
     public partial class Form1 : Form
     {
         List<Student> students = new List<Student>()
-        { 
+        {
             new Student(11111,"Chris", "Redfield","credfield@capcom.com"),
             new Student(22222,"Leon","Kennedy","lskennedy@capcom.com"),
             new Student(33333,"Claire","Redfield","credfield2@capcom.com"),
@@ -24,12 +24,15 @@ namespace LAB5
         public Form1()
         {
             InitializeComponent();
-            rtStudentOutput.Text = students.ToString();
+            foreach (Student student in students)
+            {
+                return students("\n");
+            }
         }
 
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            try
+        try
             {
                 int studentId = Convert.ToInt32(txtStudentId.Text);
                 string firstName = txtFirstName.Text;
