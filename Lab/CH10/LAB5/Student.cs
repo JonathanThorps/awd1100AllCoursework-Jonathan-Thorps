@@ -23,7 +23,7 @@ namespace LAB5
         public int StudentId { get { return _studentId; } }
         public string FirstName { get { return _firstName; } }
         public string LastName { get { return _lastName; } }
-        public string Email { get { return _email; } } 
+        public string Email { get { return _email; } }
     }
    
 }

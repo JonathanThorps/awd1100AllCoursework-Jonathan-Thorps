@@ -24,7 +24,7 @@ namespace LAB5
         public Form1()
         {
             InitializeComponent();
-            rtStudentOutput.Text = students.Count.ToString();
+            rtStudentOutput.Text = students.ToString();
         }
 
         private void btnAddStudent_Click(object sender, EventArgs e)
