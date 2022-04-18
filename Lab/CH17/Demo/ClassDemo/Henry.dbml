@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HENRY" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\HENRY.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="ClassDemo.Properties.Settings" SettingsPropertyName="HENRYConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AUTHOR" Member="AUTHORs">
+    <Type Name="AUTHOR">
+      <Column Name="AUTHOR_NUM" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AUTHOR_LAST" Type="System.String" DbType="Char(12)" CanBeNull="true" />
+      <Column Name="AUTHOR_FIRST" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BOOK" Member="BOOKs">
+    <Type Name="BOOK">
+      <Column Name="BOOK_CODE" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TITLE" Type="System.String" DbType="Char(40)" CanBeNull="true" />
+      <Column Name="PUBLISHER_CODE" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="TYPE" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="PRICE" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="PAPERBACK" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BRANCH" Member="BRANCHes">
+    <Type Name="BRANCH">
+      <Column Name="BRANCH_NUM" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+      <Column Name="BRANCH_LOCATION" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+      <Column Name="NUM_EMPLOYEES" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.INVENTORY" Member="INVENTORies">
+    <Type Name="INVENTORY">
+      <Column Name="BOOK_CODE" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BRANCH_NUM" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ON_HAND" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PUBLISHER" Member="PUBLISHERs">
+    <Type Name="PUBLISHER">
+      <Column Name="PUBLISHER_CODE" Type="System.String" DbType="Char(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PUBLISHER_NAME" Type="System.String" DbType="Char(25)" CanBeNull="true" />
+      <Column Name="CITY" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WROTE" Member="WROTEs">
+    <Type Name="WROTE">
+      <Column Name="BOOK_CODE" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AUTHOR_NUM" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SEQUENCE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
