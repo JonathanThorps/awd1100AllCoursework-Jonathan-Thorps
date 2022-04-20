@@ -20,17 +20,17 @@ namespace ClassDemo
             var data = henryDb.Authors;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAuthor_Click(object sender, EventArgs e)
         {
             where();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnPublisher_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnBook_Click(object sender, EventArgs e)
         {
 
         }
