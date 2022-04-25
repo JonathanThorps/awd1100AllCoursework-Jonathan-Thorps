@@ -14,19 +14,19 @@ namespace HOT7Retake
         private float _min;
         private float _max;
 
-        public SalesFigures()
+        public SalesFigures(int count,float sum,float avg,float min, float max)
         {
-            _count = 0;
-            _sum = 0;
-            _avg = 0;
-            _min = 0;
-            _max = 0;
+            _count = count;
+            _sum = sum;
+            _avg = avg;
+            _min = min;
+            _max = max;
         }
         public float AddSales(float sales)
         {
-            while (_count > 0)
+            for (int i = 0 ;i <_count; _count++)
             {
-                _count++;
+                return _sum += sales;
 
                 if (sales < 0 || sales > 1000)
                 {
@@ -34,7 +34,6 @@ namespace HOT7Retake
                 }
                 else
                 {
-                    _sum += sales;
                     return _avg = _sum / _count;
                 }
                 
@@ -46,8 +45,9 @@ namespace HOT7Retake
                 {
                    return sales = _max;
                 }
+                
             }
-            return _count++;
+            return _count;
         }
         public int Count { get { return _count; } }
         public float Sum { get { return _sum; } }

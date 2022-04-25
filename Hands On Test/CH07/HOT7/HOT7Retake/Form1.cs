@@ -12,7 +12,6 @@ namespace HOT7Retake
 {
     public partial class HOT7Retake : Form
     {
-        //private SalesFigures _stats;
         public HOT7Retake()
         {
             InitializeComponent();
