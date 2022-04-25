@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Department.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +120,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\woods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\griggs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hudson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nikolai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sims.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weaver.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
