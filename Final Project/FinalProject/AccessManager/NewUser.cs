@@ -15,16 +15,29 @@ namespace AccessManager
         public NewUser()
         {
             InitializeComponent();
+            cbMainEnt.Checked = true;
+            cbMainGate.Checked = true;
+            cbTraining.Checked = true;
+            cbGarage.Checked = true;
         }
         
         private void rbAviation_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(rbAviation.Checked)
+            {
+                cbHangar.Checked = true;
+                cbMachine.Checked = true;
+                cbSecureConf.Checked = true;
+                cbControl.Checked = true;
+            }
         }
 
         private void rbCommand_CheckedChanged(object sender, EventArgs e)
         {
+            if (rbCommand.Checked)
+            {
 
+            }
         }
 
         private void rbCombat_CheckedChanged(object sender, EventArgs e)

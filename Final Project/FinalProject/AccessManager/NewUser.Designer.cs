@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbIdPhoto = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +46,7 @@
             this.gbCombat = new System.Windows.Forms.GroupBox();
             this.rbItShop = new System.Windows.Forms.RadioButton();
             this.rbEtShop = new System.Windows.Forms.RadioButton();
-            this.rbArmory = new System.Windows.Forms.RadioButton();
+            this.rbWeapons = new System.Windows.Forms.RadioButton();
             this.gbCommon = new System.Windows.Forms.GroupBox();
             this.cbHobbyShop = new System.Windows.Forms.CheckBox();
             this.cbBarracks = new System.Windows.Forms.CheckBox();
@@ -77,28 +76,42 @@
             this.cbAll = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.cbLoading = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIdPhoto)).BeginInit();
+            this.pbIdPhoto = new System.Windows.Forms.PictureBox();
+            this.cbArmory = new System.Windows.Forms.CheckBox();
+            this.cbComms = new System.Windows.Forms.CheckBox();
+            this.cbConfRm = new System.Windows.Forms.CheckBox();
+            this.cbVehicles = new System.Windows.Forms.CheckBox();
+            this.cbRecords = new System.Windows.Forms.CheckBox();
+            this.cbPersonnel = new System.Windows.Forms.CheckBox();
+            this.cbSecureConf = new System.Windows.Forms.CheckBox();
+            this.cbStorage = new System.Windows.Forms.CheckBox();
+            this.cbServerRm = new System.Windows.Forms.CheckBox();
+            this.cbAccounting = new System.Windows.Forms.CheckBox();
+            this.cbElectrical = new System.Windows.Forms.CheckBox();
+            this.cbHvac = new System.Windows.Forms.CheckBox();
+            this.cbCarpentry = new System.Windows.Forms.CheckBox();
+            this.cbWeldShop = new System.Windows.Forms.CheckBox();
+            this.cbGym = new System.Windows.Forms.CheckBox();
+            this.cbElexShop = new System.Windows.Forms.CheckBox();
+            this.cbMachine = new System.Windows.Forms.CheckBox();
+            this.cbControl = new System.Windows.Forms.CheckBox();
+            this.cbNetwork = new System.Windows.Forms.CheckBox();
+            this.cbHangar = new System.Windows.Forms.CheckBox();
+            this.checkBox21 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.gbCombat.SuspendLayout();
             this.gbCommon.SuspendLayout();
             this.gbSupport.SuspendLayout();
             this.gbEngine.SuspendLayout();
             this.gbOps.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIdPhoto)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbIdPhoto
-            // 
-            this.pbIdPhoto.Location = new System.Drawing.Point(33, 12);
-            this.pbIdPhoto.Name = "pbIdPhoto";
-            this.pbIdPhoto.Size = new System.Drawing.Size(178, 188);
-            this.pbIdPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbIdPhoto.TabIndex = 0;
-            this.pbIdPhoto.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(227, 12);
+            this.label1.Location = new System.Drawing.Point(232, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 16);
             this.label1.TabIndex = 1;
@@ -107,7 +120,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(227, 58);
+            this.label2.Location = new System.Drawing.Point(232, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 16);
             this.label2.TabIndex = 2;
@@ -116,7 +129,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(227, 104);
+            this.label3.Location = new System.Drawing.Point(232, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 16);
             this.label3.TabIndex = 3;
@@ -124,21 +137,21 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(326, 12);
+            this.txtFirstName.Location = new System.Drawing.Point(331, 43);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(221, 22);
             this.txtFirstName.TabIndex = 4;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(326, 55);
+            this.txtLastName.Location = new System.Drawing.Point(331, 86);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(221, 22);
             this.txtLastName.TabIndex = 5;
             // 
             // txtIdNum
             // 
-            this.txtIdNum.Location = new System.Drawing.Point(326, 101);
+            this.txtIdNum.Location = new System.Drawing.Point(331, 132);
             this.txtIdNum.Name = "txtIdNum";
             this.txtIdNum.ReadOnly = true;
             this.txtIdNum.Size = new System.Drawing.Size(221, 22);
@@ -154,7 +167,7 @@
             this.groupBox1.Controls.Add(this.rbCombat);
             this.groupBox1.Controls.Add(this.rbCommand);
             this.groupBox1.Controls.Add(this.rbAviation);
-            this.groupBox1.Location = new System.Drawing.Point(33, 215);
+            this.groupBox1.Location = new System.Drawing.Point(27, 231);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(178, 291);
             this.groupBox1.TabIndex = 9;
@@ -261,8 +274,8 @@
             // 
             this.gbCombat.Controls.Add(this.rbItShop);
             this.gbCombat.Controls.Add(this.rbEtShop);
-            this.gbCombat.Controls.Add(this.rbArmory);
-            this.gbCombat.Location = new System.Drawing.Point(230, 215);
+            this.gbCombat.Controls.Add(this.rbWeapons);
+            this.gbCombat.Location = new System.Drawing.Point(224, 231);
             this.gbCombat.Name = "gbCombat";
             this.gbCombat.Size = new System.Drawing.Size(185, 126);
             this.gbCombat.TabIndex = 10;
@@ -273,7 +286,7 @@
             // rbItShop
             // 
             this.rbItShop.AutoSize = true;
-            this.rbItShop.Location = new System.Drawing.Point(17, 100);
+            this.rbItShop.Location = new System.Drawing.Point(17, 93);
             this.rbItShop.Name = "rbItShop";
             this.rbItShop.Size = new System.Drawing.Size(148, 20);
             this.rbItShop.TabIndex = 2;
@@ -284,7 +297,7 @@
             // rbEtShop
             // 
             this.rbEtShop.AutoSize = true;
-            this.rbEtShop.Location = new System.Drawing.Point(17, 67);
+            this.rbEtShop.Location = new System.Drawing.Point(17, 57);
             this.rbEtShop.Name = "rbEtShop";
             this.rbEtShop.Size = new System.Drawing.Size(129, 20);
             this.rbEtShop.TabIndex = 1;
@@ -292,19 +305,20 @@
             this.rbEtShop.Text = "Electronics Shop";
             this.rbEtShop.UseVisualStyleBackColor = true;
             // 
-            // rbArmory
+            // rbWeapons
             // 
-            this.rbArmory.AutoSize = true;
-            this.rbArmory.Location = new System.Drawing.Point(17, 31);
-            this.rbArmory.Name = "rbArmory";
-            this.rbArmory.Size = new System.Drawing.Size(71, 20);
-            this.rbArmory.TabIndex = 0;
-            this.rbArmory.TabStop = true;
-            this.rbArmory.Text = "Armory";
-            this.rbArmory.UseVisualStyleBackColor = true;
+            this.rbWeapons.AutoSize = true;
+            this.rbWeapons.Location = new System.Drawing.Point(17, 21);
+            this.rbWeapons.Name = "rbWeapons";
+            this.rbWeapons.Size = new System.Drawing.Size(87, 20);
+            this.rbWeapons.TabIndex = 0;
+            this.rbWeapons.TabStop = true;
+            this.rbWeapons.Text = "Weapons";
+            this.rbWeapons.UseVisualStyleBackColor = true;
             // 
             // gbCommon
             // 
+            this.gbCommon.Controls.Add(this.cbGym);
             this.gbCommon.Controls.Add(this.cbLoading);
             this.gbCommon.Controls.Add(this.cbAll);
             this.gbCommon.Controls.Add(this.cbTraining);
@@ -317,9 +331,9 @@
             this.gbCommon.Controls.Add(this.cbGarage);
             this.gbCommon.Controls.Add(this.cbSideGate);
             this.gbCommon.Controls.Add(this.cbMainGate);
-            this.gbCommon.Location = new System.Drawing.Point(609, 12);
+            this.gbCommon.Location = new System.Drawing.Point(603, 12);
             this.gbCommon.Name = "gbCommon";
-            this.gbCommon.Size = new System.Drawing.Size(419, 188);
+            this.gbCommon.Size = new System.Drawing.Size(419, 205);
             this.gbCommon.TabIndex = 10;
             this.gbCommon.TabStop = false;
             this.gbCommon.Text = "Common Areas";
@@ -327,17 +341,17 @@
             // cbHobbyShop
             // 
             this.cbHobbyShop.AutoSize = true;
-            this.cbHobbyShop.Location = new System.Drawing.Point(135, 120);
+            this.cbHobbyShop.Location = new System.Drawing.Point(149, 99);
             this.cbHobbyShop.Name = "cbHobbyShop";
-            this.cbHobbyShop.Size = new System.Drawing.Size(155, 20);
+            this.cbHobbyShop.Size = new System.Drawing.Size(105, 20);
             this.cbHobbyShop.TabIndex = 8;
-            this.cbHobbyShop.Text = "Garage/Hobby Shop";
+            this.cbHobbyShop.Text = "Hobby Shop";
             this.cbHobbyShop.UseVisualStyleBackColor = true;
             // 
             // cbBarracks
             // 
             this.cbBarracks.AutoSize = true;
-            this.cbBarracks.Location = new System.Drawing.Point(301, 45);
+            this.cbBarracks.Location = new System.Drawing.Point(149, 168);
             this.cbBarracks.Name = "cbBarracks";
             this.cbBarracks.Size = new System.Drawing.Size(83, 20);
             this.cbBarracks.TabIndex = 7;
@@ -347,7 +361,7 @@
             // cbDayCare
             // 
             this.cbDayCare.AutoSize = true;
-            this.cbDayCare.Location = new System.Drawing.Point(135, 163);
+            this.cbDayCare.Location = new System.Drawing.Point(149, 27);
             this.cbDayCare.Name = "cbDayCare";
             this.cbDayCare.Size = new System.Drawing.Size(86, 20);
             this.cbDayCare.TabIndex = 6;
@@ -357,7 +371,7 @@
             // cbPrintShop
             // 
             this.cbPrintShop.AutoSize = true;
-            this.cbPrintShop.Location = new System.Drawing.Point(301, 120);
+            this.cbPrintShop.Location = new System.Drawing.Point(295, 62);
             this.cbPrintShop.Name = "cbPrintShop";
             this.cbPrintShop.Size = new System.Drawing.Size(90, 20);
             this.cbPrintShop.TabIndex = 5;
@@ -367,7 +381,7 @@
             // cbSideEnt
             // 
             this.cbSideEnt.AutoSize = true;
-            this.cbSideEnt.Location = new System.Drawing.Point(135, 45);
+            this.cbSideEnt.Location = new System.Drawing.Point(12, 168);
             this.cbSideEnt.Name = "cbSideEnt";
             this.cbSideEnt.Size = new System.Drawing.Size(113, 20);
             this.cbSideEnt.TabIndex = 4;
@@ -377,7 +391,7 @@
             // cbMainEnt
             // 
             this.cbMainEnt.AutoSize = true;
-            this.cbMainEnt.Location = new System.Drawing.Point(15, 163);
+            this.cbMainEnt.Location = new System.Drawing.Point(12, 135);
             this.cbMainEnt.Name = "cbMainEnt";
             this.cbMainEnt.Size = new System.Drawing.Size(114, 20);
             this.cbMainEnt.TabIndex = 3;
@@ -387,7 +401,7 @@
             // cbGarage
             // 
             this.cbGarage.AutoSize = true;
-            this.cbGarage.Location = new System.Drawing.Point(135, 81);
+            this.cbGarage.Location = new System.Drawing.Point(149, 62);
             this.cbGarage.Name = "cbGarage";
             this.cbGarage.Size = new System.Drawing.Size(75, 20);
             this.cbGarage.TabIndex = 2;
@@ -397,7 +411,7 @@
             // cbSideGate
             // 
             this.cbSideGate.AutoSize = true;
-            this.cbSideGate.Location = new System.Drawing.Point(16, 120);
+            this.cbSideGate.Location = new System.Drawing.Point(12, 99);
             this.cbSideGate.Name = "cbSideGate";
             this.cbSideGate.Size = new System.Drawing.Size(89, 20);
             this.cbSideGate.TabIndex = 1;
@@ -407,7 +421,7 @@
             // cbMainGate
             // 
             this.cbMainGate.AutoSize = true;
-            this.cbMainGate.Location = new System.Drawing.Point(15, 81);
+            this.cbMainGate.Location = new System.Drawing.Point(13, 62);
             this.cbMainGate.Name = "cbMainGate";
             this.cbMainGate.Size = new System.Drawing.Size(90, 20);
             this.cbMainGate.TabIndex = 0;
@@ -420,7 +434,7 @@
             this.gbSupport.Controls.Add(this.rbMedical);
             this.gbSupport.Controls.Add(this.rbFoodService);
             this.gbSupport.Controls.Add(this.rbAdmin);
-            this.gbSupport.Location = new System.Drawing.Point(432, 357);
+            this.gbSupport.Location = new System.Drawing.Point(426, 373);
             this.gbSupport.Name = "gbSupport";
             this.gbSupport.Size = new System.Drawing.Size(159, 149);
             this.gbSupport.TabIndex = 11;
@@ -478,7 +492,7 @@
             this.gbEngine.Controls.Add(this.rbCarpentry);
             this.gbEngine.Controls.Add(this.rbMainProp);
             this.gbEngine.Controls.Add(this.rbAux);
-            this.gbEngine.Location = new System.Drawing.Point(230, 357);
+            this.gbEngine.Location = new System.Drawing.Point(224, 373);
             this.gbEngine.Name = "gbEngine";
             this.gbEngine.Size = new System.Drawing.Size(185, 149);
             this.gbEngine.TabIndex = 12;
@@ -535,7 +549,7 @@
             this.gbOps.Controls.Add(this.rbPlanning);
             this.gbOps.Controls.Add(this.rbIntel);
             this.gbOps.Controls.Add(this.rbComms);
-            this.gbOps.Location = new System.Drawing.Point(432, 215);
+            this.gbOps.Location = new System.Drawing.Point(426, 231);
             this.gbOps.Name = "gbOps";
             this.gbOps.Size = new System.Drawing.Size(159, 126);
             this.gbOps.TabIndex = 13;
@@ -557,7 +571,7 @@
             // rbIntel
             // 
             this.rbIntel.AutoSize = true;
-            this.rbIntel.Location = new System.Drawing.Point(24, 56);
+            this.rbIntel.Location = new System.Drawing.Point(24, 55);
             this.rbIntel.Name = "rbIntel";
             this.rbIntel.Size = new System.Drawing.Size(96, 20);
             this.rbIntel.TabIndex = 1;
@@ -578,7 +592,27 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Location = new System.Drawing.Point(609, 215);
+            this.groupBox7.Controls.Add(this.checkBox21);
+            this.groupBox7.Controls.Add(this.cbHangar);
+            this.groupBox7.Controls.Add(this.cbNetwork);
+            this.groupBox7.Controls.Add(this.cbControl);
+            this.groupBox7.Controls.Add(this.cbMachine);
+            this.groupBox7.Controls.Add(this.cbElexShop);
+            this.groupBox7.Controls.Add(this.cbCarpentry);
+            this.groupBox7.Controls.Add(this.cbWeldShop);
+            this.groupBox7.Controls.Add(this.cbHvac);
+            this.groupBox7.Controls.Add(this.cbElectrical);
+            this.groupBox7.Controls.Add(this.cbAccounting);
+            this.groupBox7.Controls.Add(this.cbServerRm);
+            this.groupBox7.Controls.Add(this.cbStorage);
+            this.groupBox7.Controls.Add(this.cbSecureConf);
+            this.groupBox7.Controls.Add(this.cbPersonnel);
+            this.groupBox7.Controls.Add(this.cbRecords);
+            this.groupBox7.Controls.Add(this.cbVehicles);
+            this.groupBox7.Controls.Add(this.cbConfRm);
+            this.groupBox7.Controls.Add(this.cbComms);
+            this.groupBox7.Controls.Add(this.cbArmory);
+            this.groupBox7.Location = new System.Drawing.Point(603, 231);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(419, 291);
             this.groupBox7.TabIndex = 11;
@@ -588,7 +622,7 @@
             // cbTraining
             // 
             this.cbTraining.AutoSize = true;
-            this.cbTraining.Location = new System.Drawing.Point(301, 81);
+            this.cbTraining.Location = new System.Drawing.Point(295, 27);
             this.cbTraining.Name = "cbTraining";
             this.cbTraining.Size = new System.Drawing.Size(118, 20);
             this.cbTraining.TabIndex = 9;
@@ -598,7 +632,7 @@
             // cbAll
             // 
             this.cbAll.AutoSize = true;
-            this.cbAll.Location = new System.Drawing.Point(15, 41);
+            this.cbAll.Location = new System.Drawing.Point(14, 27);
             this.cbAll.Name = "cbAll";
             this.cbAll.Size = new System.Drawing.Size(85, 20);
             this.cbAll.TabIndex = 0;
@@ -607,7 +641,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(455, 527);
+            this.button1.Location = new System.Drawing.Point(455, 544);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 48);
             this.button1.TabIndex = 14;
@@ -617,18 +651,237 @@
             // cbLoading
             // 
             this.cbLoading.AutoSize = true;
-            this.cbLoading.Location = new System.Drawing.Point(301, 162);
+            this.cbLoading.Location = new System.Drawing.Point(295, 99);
             this.cbLoading.Name = "cbLoading";
             this.cbLoading.Size = new System.Drawing.Size(113, 20);
             this.cbLoading.TabIndex = 10;
             this.cbLoading.Text = "Loading Dock";
             this.cbLoading.UseVisualStyleBackColor = true;
             // 
+            // pbIdPhoto
+            // 
+            this.pbIdPhoto.Location = new System.Drawing.Point(33, 12);
+            this.pbIdPhoto.Name = "pbIdPhoto";
+            this.pbIdPhoto.Size = new System.Drawing.Size(178, 188);
+            this.pbIdPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIdPhoto.TabIndex = 0;
+            this.pbIdPhoto.TabStop = false;
+            // 
+            // cbArmory
+            // 
+            this.cbArmory.AutoSize = true;
+            this.cbArmory.Location = new System.Drawing.Point(16, 22);
+            this.cbArmory.Name = "cbArmory";
+            this.cbArmory.Size = new System.Drawing.Size(72, 20);
+            this.cbArmory.TabIndex = 0;
+            this.cbArmory.Text = "Armory";
+            this.cbArmory.UseVisualStyleBackColor = true;
+            // 
+            // cbComms
+            // 
+            this.cbComms.AutoSize = true;
+            this.cbComms.Location = new System.Drawing.Point(292, 129);
+            this.cbComms.Name = "cbComms";
+            this.cbComms.Size = new System.Drawing.Size(115, 20);
+            this.cbComms.TabIndex = 1;
+            this.cbComms.Text = "Comms Room";
+            this.cbComms.UseVisualStyleBackColor = true;
+            // 
+            // cbConfRm
+            // 
+            this.cbConfRm.AutoSize = true;
+            this.cbConfRm.Location = new System.Drawing.Point(130, 55);
+            this.cbConfRm.Name = "cbConfRm";
+            this.cbConfRm.Size = new System.Drawing.Size(138, 20);
+            this.cbConfRm.TabIndex = 2;
+            this.cbConfRm.Text = "Conference Room";
+            this.cbConfRm.UseVisualStyleBackColor = true;
+            // 
+            // cbVehicles
+            // 
+            this.cbVehicles.AutoSize = true;
+            this.cbVehicles.Location = new System.Drawing.Point(134, 246);
+            this.cbVehicles.Name = "cbVehicles";
+            this.cbVehicles.Size = new System.Drawing.Size(101, 20);
+            this.cbVehicles.TabIndex = 3;
+            this.cbVehicles.Text = "Vehicle Bay";
+            this.cbVehicles.UseVisualStyleBackColor = true;
+            // 
+            // cbRecords
+            // 
+            this.cbRecords.AutoSize = true;
+            this.cbRecords.Location = new System.Drawing.Point(16, 55);
+            this.cbRecords.Name = "cbRecords";
+            this.cbRecords.Size = new System.Drawing.Size(81, 20);
+            this.cbRecords.TabIndex = 4;
+            this.cbRecords.Text = "Records";
+            this.cbRecords.UseVisualStyleBackColor = true;
+            // 
+            // cbPersonnel
+            // 
+            this.cbPersonnel.AutoSize = true;
+            this.cbPersonnel.Location = new System.Drawing.Point(17, 164);
+            this.cbPersonnel.Name = "cbPersonnel";
+            this.cbPersonnel.Size = new System.Drawing.Size(90, 20);
+            this.cbPersonnel.TabIndex = 5;
+            this.cbPersonnel.Text = "Personnel";
+            this.cbPersonnel.UseVisualStyleBackColor = true;
+            // 
+            // cbSecureConf
+            // 
+            this.cbSecureConf.AutoSize = true;
+            this.cbSecureConf.Location = new System.Drawing.Point(130, 93);
+            this.cbSecureConf.Name = "cbSecureConf";
+            this.cbSecureConf.Size = new System.Drawing.Size(145, 20);
+            this.cbSecureConf.TabIndex = 6;
+            this.cbSecureConf.Text = "Secure Conf. Room";
+            this.cbSecureConf.UseVisualStyleBackColor = true;
+            // 
+            // cbStorage
+            // 
+            this.cbStorage.AutoSize = true;
+            this.cbStorage.Location = new System.Drawing.Point(292, 164);
+            this.cbStorage.Name = "cbStorage";
+            this.cbStorage.Size = new System.Drawing.Size(77, 20);
+            this.cbStorage.TabIndex = 7;
+            this.cbStorage.Text = "Storage";
+            this.cbStorage.UseVisualStyleBackColor = true;
+            // 
+            // cbServerRm
+            // 
+            this.cbServerRm.AutoSize = true;
+            this.cbServerRm.Location = new System.Drawing.Point(292, 93);
+            this.cbServerRm.Name = "cbServerRm";
+            this.cbServerRm.Size = new System.Drawing.Size(109, 20);
+            this.cbServerRm.TabIndex = 8;
+            this.cbServerRm.Text = "Server Room";
+            this.cbServerRm.UseVisualStyleBackColor = true;
+            // 
+            // cbAccounting
+            // 
+            this.cbAccounting.AutoSize = true;
+            this.cbAccounting.Location = new System.Drawing.Point(17, 129);
+            this.cbAccounting.Name = "cbAccounting";
+            this.cbAccounting.Size = new System.Drawing.Size(95, 20);
+            this.cbAccounting.TabIndex = 9;
+            this.cbAccounting.Text = "Accounting";
+            this.cbAccounting.UseVisualStyleBackColor = true;
+            // 
+            // cbElectrical
+            // 
+            this.cbElectrical.AutoSize = true;
+            this.cbElectrical.Location = new System.Drawing.Point(130, 129);
+            this.cbElectrical.Name = "cbElectrical";
+            this.cbElectrical.Size = new System.Drawing.Size(124, 20);
+            this.cbElectrical.TabIndex = 10;
+            this.cbElectrical.Text = "Electrical Room";
+            this.cbElectrical.UseVisualStyleBackColor = true;
+            // 
+            // cbHvac
+            // 
+            this.cbHvac.AutoSize = true;
+            this.cbHvac.Location = new System.Drawing.Point(16, 93);
+            this.cbHvac.Name = "cbHvac";
+            this.cbHvac.Size = new System.Drawing.Size(66, 20);
+            this.cbHvac.TabIndex = 11;
+            this.cbHvac.Text = "HVAC";
+            this.cbHvac.UseVisualStyleBackColor = true;
+            // 
+            // cbCarpentry
+            // 
+            this.cbCarpentry.AutoSize = true;
+            this.cbCarpentry.Location = new System.Drawing.Point(132, 164);
+            this.cbCarpentry.Name = "cbCarpentry";
+            this.cbCarpentry.Size = new System.Drawing.Size(122, 20);
+            this.cbCarpentry.TabIndex = 15;
+            this.cbCarpentry.Text = "Carpentry Shop";
+            this.cbCarpentry.UseVisualStyleBackColor = true;
+            // 
+            // cbWeldShop
+            // 
+            this.cbWeldShop.AutoSize = true;
+            this.cbWeldShop.Location = new System.Drawing.Point(17, 205);
+            this.cbWeldShop.Name = "cbWeldShop";
+            this.cbWeldShop.Size = new System.Drawing.Size(96, 20);
+            this.cbWeldShop.TabIndex = 16;
+            this.cbWeldShop.Text = "Weld Shop";
+            this.cbWeldShop.UseVisualStyleBackColor = true;
+            // 
+            // cbGym
+            // 
+            this.cbGym.AutoSize = true;
+            this.cbGym.Location = new System.Drawing.Point(149, 135);
+            this.cbGym.Name = "cbGym";
+            this.cbGym.Size = new System.Drawing.Size(100, 20);
+            this.cbGym.TabIndex = 11;
+            this.cbGym.Text = "Gymnasium";
+            this.cbGym.UseVisualStyleBackColor = true;
+            // 
+            // cbElexShop
+            // 
+            this.cbElexShop.AutoSize = true;
+            this.cbElexShop.Location = new System.Drawing.Point(17, 246);
+            this.cbElexShop.Name = "cbElexShop";
+            this.cbElexShop.Size = new System.Drawing.Size(98, 20);
+            this.cbElexShop.TabIndex = 17;
+            this.cbElexShop.Text = "ET/IT Shop";
+            this.cbElexShop.UseVisualStyleBackColor = true;
+            // 
+            // cbMachine
+            // 
+            this.cbMachine.AutoSize = true;
+            this.cbMachine.Location = new System.Drawing.Point(134, 205);
+            this.cbMachine.Name = "cbMachine";
+            this.cbMachine.Size = new System.Drawing.Size(115, 20);
+            this.cbMachine.TabIndex = 15;
+            this.cbMachine.Text = "Machine Shop";
+            this.cbMachine.UseVisualStyleBackColor = true;
+            // 
+            // cbControl
+            // 
+            this.cbControl.AutoSize = true;
+            this.cbControl.Location = new System.Drawing.Point(292, 55);
+            this.cbControl.Name = "cbControl";
+            this.cbControl.Size = new System.Drawing.Size(112, 20);
+            this.cbControl.TabIndex = 15;
+            this.cbControl.Text = "Control Tower";
+            this.cbControl.UseVisualStyleBackColor = true;
+            // 
+            // cbNetwork
+            // 
+            this.cbNetwork.AutoSize = true;
+            this.cbNetwork.Location = new System.Drawing.Point(292, 20);
+            this.cbNetwork.Name = "cbNetwork";
+            this.cbNetwork.Size = new System.Drawing.Size(126, 20);
+            this.cbNetwork.TabIndex = 18;
+            this.cbNetwork.Text = "Network Closets";
+            this.cbNetwork.UseVisualStyleBackColor = true;
+            // 
+            // cbHangar
+            // 
+            this.cbHangar.AutoSize = true;
+            this.cbHangar.Location = new System.Drawing.Point(292, 205);
+            this.cbHangar.Name = "cbHangar";
+            this.cbHangar.Size = new System.Drawing.Size(74, 20);
+            this.cbHangar.TabIndex = 19;
+            this.cbHangar.Text = "Hangar";
+            this.cbHangar.UseVisualStyleBackColor = true;
+            // 
+            // checkBox21
+            // 
+            this.checkBox21.AutoSize = true;
+            this.checkBox21.Location = new System.Drawing.Point(130, 20);
+            this.checkBox21.Name = "checkBox21";
+            this.checkBox21.Size = new System.Drawing.Size(108, 20);
+            this.checkBox21.TabIndex = 20;
+            this.checkBox21.Text = "Intel/Analysis";
+            this.checkBox21.UseVisualStyleBackColor = true;
+            // 
             // NewUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 587);
+            this.ClientSize = new System.Drawing.Size(1050, 604);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.gbOps);
@@ -646,7 +899,6 @@
             this.Controls.Add(this.pbIdPhoto);
             this.Name = "NewUser";
             this.Text = "NewUser";
-            ((System.ComponentModel.ISupportInitialize)(this.pbIdPhoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.gbCombat.ResumeLayout(false);
@@ -659,6 +911,9 @@
             this.gbEngine.PerformLayout();
             this.gbOps.ResumeLayout(false);
             this.gbOps.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIdPhoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -683,7 +938,7 @@
         private System.Windows.Forms.GroupBox gbCombat;
         private System.Windows.Forms.RadioButton rbItShop;
         private System.Windows.Forms.RadioButton rbEtShop;
-        private System.Windows.Forms.RadioButton rbArmory;
+        private System.Windows.Forms.RadioButton rbWeapons;
         private System.Windows.Forms.GroupBox gbCommon;
         private System.Windows.Forms.GroupBox gbSupport;
         private System.Windows.Forms.RadioButton rbSupply;
@@ -715,5 +970,26 @@
         private System.Windows.Forms.CheckBox cbAll;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox cbLoading;
+        private System.Windows.Forms.CheckBox cbStorage;
+        private System.Windows.Forms.CheckBox cbSecureConf;
+        private System.Windows.Forms.CheckBox cbPersonnel;
+        private System.Windows.Forms.CheckBox cbRecords;
+        private System.Windows.Forms.CheckBox cbVehicles;
+        private System.Windows.Forms.CheckBox cbConfRm;
+        private System.Windows.Forms.CheckBox cbComms;
+        private System.Windows.Forms.CheckBox cbArmory;
+        private System.Windows.Forms.CheckBox cbGym;
+        private System.Windows.Forms.CheckBox checkBox21;
+        private System.Windows.Forms.CheckBox cbHangar;
+        private System.Windows.Forms.CheckBox cbNetwork;
+        private System.Windows.Forms.CheckBox cbControl;
+        private System.Windows.Forms.CheckBox cbMachine;
+        private System.Windows.Forms.CheckBox cbElexShop;
+        private System.Windows.Forms.CheckBox cbCarpentry;
+        private System.Windows.Forms.CheckBox cbWeldShop;
+        private System.Windows.Forms.CheckBox cbHvac;
+        private System.Windows.Forms.CheckBox cbElectrical;
+        private System.Windows.Forms.CheckBox cbAccounting;
+        private System.Windows.Forms.CheckBox cbServerRm;
     }
 }

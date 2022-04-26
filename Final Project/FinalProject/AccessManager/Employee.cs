@@ -23,6 +23,10 @@ namespace AccessManager
             _image = Image;
             _department = department;
         }
+        public Employee NewEmploye()
+        {
+            Random employeeId = new Random();
+        }
         public string FirstName { get { return _firstName; } set { _firstName = value; } }
         public string LastName { get { return _lastName; } set { _lastName = value; } }
         public int EmployeeId { get { return _employeeId; } set { _employeeId = value;} }
