@@ -36,7 +36,15 @@ namespace AccessManager
         {
             if (rbCommand.Checked)
             {
-
+                cbPersonnel.Checked=true;
+                cbSecureConf.Checked=true;
+                cbWeldShop.Checked=true;
+                cbMachine.Checked=true;
+                cbArmory.Checked=true;
+                cbComms.Checked=true;
+                cbControl.Checked=true;
+                cbConfRm.Checked=true;
+                cbIntel.Checked=true;
             }
         }
 
@@ -45,6 +53,51 @@ namespace AccessManager
             if (rbCombat.Checked)
             {
                 gbCombat.Visible = true;
+
+                if(rbWeapons.Checked)
+                {
+
+                }
+                if(rbEtShop.Checked)
+                {
+
+                }
+                if(rbItShop.Checked)
+                {
+                    cbPersonnel.Checked = true;
+                    cbServerRm.Checked = true;
+                    cbElexShop.Checked = true;
+                    cbAccounting.Checked = true;
+                    cbNetwork.Checked = true;
+                    cbMachine.Checked = true;
+                    cbArmory.Checked = true;
+                    cbIntel.Checked = true;
+                    cbComms.Checked = true;
+                    cbCarpentry.Checked = true;
+                    cbConfRm.Checked = true;
+                    cbControl.Checked = true;
+                    cbSecureConf.Checked = true;
+                    cbPrintShop.Checked=true;
+
+                    cbAll.Checked = true;
+
+                    if (cbAll.Checked)
+                    {
+                        cbBarracks.Checked = true;
+                        cbDayCare.Checked = true;
+                        cbGarage.Checked = true;
+                        cbGym.Checked = true;
+                        cbHobbyShop.Checked = true;
+                        cbLoading.Checked = true;
+                        cbMainGate.Checked = true;
+                        cbPrintShop.Checked = true;
+                        cbMainEnt.Checked = true;
+                        cbSideGate.Checked = true;
+                        cbSideEnt.Checked = true;
+                        cbTraining.Checked = true;
+                        cbVehicles.Checked = true;
+                    }
+                }
             }
         }
 
@@ -53,6 +106,39 @@ namespace AccessManager
             if (rbEngineering.Checked)
             {
                 gbEngine.Visible = true;
+
+                if(rbAux.Checked)
+                {
+                    cbConfRm.Checked=true;
+                    cbElectrical.Checked=true;
+                    cbHobbyShop.Checked=true;
+                    cbHvac.Checked=true;
+                    cbMachine.Checked=true;
+                    cbStorage.Checked=true;
+                    cbVehicles.Checked=true;
+                }
+                if(rbCarpentry.Checked)
+                {
+                    cbConfRm.Checked=true;
+                    cbCarpentry.Checked=true;
+                    cbHobbyShop.Checked=true;
+                    cbStorage.Checked=true;
+                }
+                if(rbEngineShop.Checked)
+                {
+                    cbConfRm.Checked=true;
+                    cbHobbyShop.Checked=true;
+                    cbMachine.Checked=true;
+                    cbStorage.Checked=true;
+                }
+                if(rbWelding.Checked)
+                {
+                    cbConfRm.Checked=true;
+                    cbHangar.Checked=true;
+                    cbMachine.Checked=true;
+                    cbStorage.Checked=true;
+                    cbVehicles.Checked=true;
+                }
             }
         }
 
@@ -61,12 +147,56 @@ namespace AccessManager
             if (rbOps.Checked)
             {
                 gbOps.Visible = true;
+
+                if(rbComms.Checked)
+                {
+                    cbComms.Checked=true;
+                    cbConfRm.Checked = true;
+                    cbControl.Checked=true;
+                    cbRecords.Checked=true;
+                    cbSecureConf.Checked = true;
+                }
+                if(rbIntel.Checked)
+                {
+                    cbConfRm.Checked=true;
+                    cbSecureConf.Checked=true;
+                    cbIntel.Checked=true;
+                    cbComms.Checked=true;
+                }
+                if(rbPlanning.Checked)
+                {
+                    cbComms.Checked=true;
+                    cbConfRm.Checked = true;
+                    cbSecureConf.Checked = true;
+                }
             }
         }
 
         private void rbSecurity_CheckedChanged(object sender, EventArgs e)
         {
+            if(rbSecurity.Checked)
+            {
+                cbArmory.Checked=true;
+                cbVehicles.Checked=true;
+                cbAll.Checked=true;
 
+                if (cbAll.Checked)
+                {
+                    cbBarracks.Checked=true;
+                    cbDayCare.Checked=true;
+                    cbGarage.Checked=true;
+                    cbGym.Checked=true;
+                    cbHobbyShop.Checked=true;
+                    cbLoading.Checked=true;
+                    cbMainGate.Checked=true;
+                    cbPrintShop.Checked=true;
+                    cbMainEnt.Checked=true;
+                    cbSideGate.Checked=true;
+                    cbSideEnt.Checked= true;
+                    cbTraining.Checked=true;
+                    cbVehicles.Checked=true;
+                }
+            }
         }
 
         private void rbSupport_CheckedChanged(object sender, EventArgs e)
@@ -74,12 +204,46 @@ namespace AccessManager
             if (rbSupport.Checked)
             {
                 gbSupport.Visible = true;
+
+                if(rbAdmin.Checked)
+                {
+                    cbConfRm.Checked=true;
+                    cbPersonnel.Checked=true;
+                    cbPrintShop.Checked=true;
+                    cbRecords.Checked=true;
+                }
+                if(rbFoodService.Checked)
+                {
+                    cbAccounting.Checked=true;
+                    cbRecords.Checked=true;
+                    cbConfRm.Checked=true;
+                    cbPrintShop.Checked=true;
+                }
+                if(rbMedical.Checked)
+                {
+                    cbRecords.Checked=true;
+                    cbSickBay.Checked=true;
+                }
+                if(rbSupply.Checked)
+                {
+                    cbConfRm.Checked=true;
+                    cbPrintShop.Checked=true;
+                    cbRecords.Checked=true;
+                    cbLoading.Checked=true;
+                    cbAccounting.Checked=true;
+                    cbStorage.Checked=true;
+                }
             }
         }
 
         private void rbTraining_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(rbTraining.Checked)
+            {
+                cbTraining.Checked = true;
+                cbConfRm.Checked = true;
+                cbPrintShop.Checked = true;
+            }
         }
     }
 }

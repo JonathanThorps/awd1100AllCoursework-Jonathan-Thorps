@@ -65,7 +65,7 @@
             this.gbEngine = new System.Windows.Forms.GroupBox();
             this.rbWelding = new System.Windows.Forms.RadioButton();
             this.rbCarpentry = new System.Windows.Forms.RadioButton();
-            this.rbMainProp = new System.Windows.Forms.RadioButton();
+            this.rbEngineShop = new System.Windows.Forms.RadioButton();
             this.rbAux = new System.Windows.Forms.RadioButton();
             this.gbOps = new System.Windows.Forms.GroupBox();
             this.rbPlanning = new System.Windows.Forms.RadioButton();
@@ -97,7 +97,8 @@
             this.cbControl = new System.Windows.Forms.CheckBox();
             this.cbNetwork = new System.Windows.Forms.CheckBox();
             this.cbHangar = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
+            this.cbIntel = new System.Windows.Forms.CheckBox();
+            this.cbSickBay = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.gbCombat.SuspendLayout();
             this.gbCommon.SuspendLayout();
@@ -490,7 +491,7 @@
             // 
             this.gbEngine.Controls.Add(this.rbWelding);
             this.gbEngine.Controls.Add(this.rbCarpentry);
-            this.gbEngine.Controls.Add(this.rbMainProp);
+            this.gbEngine.Controls.Add(this.rbEngineShop);
             this.gbEngine.Controls.Add(this.rbAux);
             this.gbEngine.Location = new System.Drawing.Point(224, 373);
             this.gbEngine.Name = "gbEngine";
@@ -522,16 +523,16 @@
             this.rbCarpentry.Text = "Carpentry Shop";
             this.rbCarpentry.UseVisualStyleBackColor = true;
             // 
-            // rbMainProp
+            // rbEngineShop
             // 
-            this.rbMainProp.AutoSize = true;
-            this.rbMainProp.Location = new System.Drawing.Point(12, 63);
-            this.rbMainProp.Name = "rbMainProp";
-            this.rbMainProp.Size = new System.Drawing.Size(105, 20);
-            this.rbMainProp.TabIndex = 2;
-            this.rbMainProp.TabStop = true;
-            this.rbMainProp.Text = "Engine Shop";
-            this.rbMainProp.UseVisualStyleBackColor = true;
+            this.rbEngineShop.AutoSize = true;
+            this.rbEngineShop.Location = new System.Drawing.Point(12, 63);
+            this.rbEngineShop.Name = "rbEngineShop";
+            this.rbEngineShop.Size = new System.Drawing.Size(105, 20);
+            this.rbEngineShop.TabIndex = 2;
+            this.rbEngineShop.TabStop = true;
+            this.rbEngineShop.Text = "Engine Shop";
+            this.rbEngineShop.UseVisualStyleBackColor = true;
             // 
             // rbAux
             // 
@@ -592,7 +593,8 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.checkBox21);
+            this.groupBox7.Controls.Add(this.cbSickBay);
+            this.groupBox7.Controls.Add(this.cbIntel);
             this.groupBox7.Controls.Add(this.cbHangar);
             this.groupBox7.Controls.Add(this.cbNetwork);
             this.groupBox7.Controls.Add(this.cbControl);
@@ -690,7 +692,7 @@
             // cbConfRm
             // 
             this.cbConfRm.AutoSize = true;
-            this.cbConfRm.Location = new System.Drawing.Point(130, 55);
+            this.cbConfRm.Location = new System.Drawing.Point(134, 55);
             this.cbConfRm.Name = "cbConfRm";
             this.cbConfRm.Size = new System.Drawing.Size(138, 20);
             this.cbConfRm.TabIndex = 2;
@@ -730,7 +732,7 @@
             // cbSecureConf
             // 
             this.cbSecureConf.AutoSize = true;
-            this.cbSecureConf.Location = new System.Drawing.Point(130, 93);
+            this.cbSecureConf.Location = new System.Drawing.Point(134, 93);
             this.cbSecureConf.Name = "cbSecureConf";
             this.cbSecureConf.Size = new System.Drawing.Size(145, 20);
             this.cbSecureConf.TabIndex = 6;
@@ -770,7 +772,7 @@
             // cbElectrical
             // 
             this.cbElectrical.AutoSize = true;
-            this.cbElectrical.Location = new System.Drawing.Point(130, 129);
+            this.cbElectrical.Location = new System.Drawing.Point(134, 129);
             this.cbElectrical.Name = "cbElectrical";
             this.cbElectrical.Size = new System.Drawing.Size(124, 20);
             this.cbElectrical.TabIndex = 10;
@@ -867,15 +869,25 @@
             this.cbHangar.Text = "Hangar";
             this.cbHangar.UseVisualStyleBackColor = true;
             // 
-            // checkBox21
+            // cbIntel
             // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(130, 20);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(108, 20);
-            this.checkBox21.TabIndex = 20;
-            this.checkBox21.Text = "Intel/Analysis";
-            this.checkBox21.UseVisualStyleBackColor = true;
+            this.cbIntel.AutoSize = true;
+            this.cbIntel.Location = new System.Drawing.Point(134, 20);
+            this.cbIntel.Name = "cbIntel";
+            this.cbIntel.Size = new System.Drawing.Size(108, 20);
+            this.cbIntel.TabIndex = 20;
+            this.cbIntel.Text = "Intel/Analysis";
+            this.cbIntel.UseVisualStyleBackColor = true;
+            // 
+            // cbSickBay
+            // 
+            this.cbSickBay.AutoSize = true;
+            this.cbSickBay.Location = new System.Drawing.Point(290, 246);
+            this.cbSickBay.Name = "cbSickBay";
+            this.cbSickBay.Size = new System.Drawing.Size(82, 20);
+            this.cbSickBay.TabIndex = 21;
+            this.cbSickBay.Text = "Sick Bay";
+            this.cbSickBay.UseVisualStyleBackColor = true;
             // 
             // NewUser
             // 
@@ -948,7 +960,7 @@
         private System.Windows.Forms.GroupBox gbEngine;
         private System.Windows.Forms.RadioButton rbWelding;
         private System.Windows.Forms.RadioButton rbCarpentry;
-        private System.Windows.Forms.RadioButton rbMainProp;
+        private System.Windows.Forms.RadioButton rbEngineShop;
         private System.Windows.Forms.RadioButton rbAux;
         private System.Windows.Forms.GroupBox gbOps;
         private System.Windows.Forms.RadioButton rbPlanning;
@@ -979,7 +991,7 @@
         private System.Windows.Forms.CheckBox cbComms;
         private System.Windows.Forms.CheckBox cbArmory;
         private System.Windows.Forms.CheckBox cbGym;
-        private System.Windows.Forms.CheckBox checkBox21;
+        private System.Windows.Forms.CheckBox cbIntel;
         private System.Windows.Forms.CheckBox cbHangar;
         private System.Windows.Forms.CheckBox cbNetwork;
         private System.Windows.Forms.CheckBox cbControl;
@@ -991,5 +1003,6 @@
         private System.Windows.Forms.CheckBox cbElectrical;
         private System.Windows.Forms.CheckBox cbAccounting;
         private System.Windows.Forms.CheckBox cbServerRm;
+        private System.Windows.Forms.CheckBox cbSickBay;
     }
 }
