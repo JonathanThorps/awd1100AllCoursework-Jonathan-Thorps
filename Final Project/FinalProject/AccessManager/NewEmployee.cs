@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AccessManager
 {
-    public partial class NewUser : Form
+    public partial class NewEmployee : Form
     {
-        public NewUser()
+        public NewEmployee()
         {
             InitializeComponent();
             cbMainEnt.Checked = true;
@@ -20,7 +20,6 @@ namespace AccessManager
             cbTraining.Checked = true;
             cbGarage.Checked = true;
         }
-        
         private void rbAviation_CheckedChanged(object sender, EventArgs e)
         {
             if(rbAviation.Checked)
@@ -31,7 +30,6 @@ namespace AccessManager
                 cbControl.Checked = true;
             }
         }
-
         private void rbCommand_CheckedChanged(object sender, EventArgs e)
         {
             if (rbCommand.Checked)
@@ -47,7 +45,6 @@ namespace AccessManager
                 cbIntel.Checked=true;
             }
         }
-
         private void rbCombat_CheckedChanged(object sender, EventArgs e)
         {
             if (rbCombat.Checked)
@@ -56,11 +53,21 @@ namespace AccessManager
 
                 if(rbWeapons.Checked)
                 {
-
+                    cbArmory.Checked=true;
+                    cbConfRm.Checked=true;
+                    cbSecureConf.Checked=true;
+                    cbStorage.Checked=true;
                 }
                 if(rbEtShop.Checked)
                 {
-
+                    cbSecureConf.Checked = true;
+                    cbConfRm.Checked = true;
+                    cbComms.Checked = true;
+                    cbControl.Checked = true;
+                    cbElexShop.Checked = true;
+                    cbStorage.Checked = true;
+                    cbHangar.Checked = true;
+                    cbVehicles.Checked = true;
                 }
                 if(rbItShop.Checked)
                 {
@@ -100,7 +107,6 @@ namespace AccessManager
                 }
             }
         }
-
         private void rbEngineering_CheckedChanged(object sender, EventArgs e)
         {
             if (rbEngineering.Checked)
@@ -141,7 +147,6 @@ namespace AccessManager
                 }
             }
         }
-
         private void rbOps_CheckedChanged(object sender, EventArgs e)
         {
             if (rbOps.Checked)
@@ -171,7 +176,6 @@ namespace AccessManager
                 }
             }
         }
-
         private void rbSecurity_CheckedChanged(object sender, EventArgs e)
         {
             if(rbSecurity.Checked)
@@ -198,7 +202,6 @@ namespace AccessManager
                 }
             }
         }
-
         private void rbSupport_CheckedChanged(object sender, EventArgs e)
         {
             if (rbSupport.Checked)
@@ -235,7 +238,6 @@ namespace AccessManager
                 }
             }
         }
-
         private void rbTraining_CheckedChanged(object sender, EventArgs e)
         {
             if(rbTraining.Checked)
@@ -243,6 +245,7 @@ namespace AccessManager
                 cbTraining.Checked = true;
                 cbConfRm.Checked = true;
                 cbPrintShop.Checked = true;
+                cbStorage.Checked = true;
             }
         }
     }

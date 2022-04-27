@@ -33,7 +33,7 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.cbDivisionSearch = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -41,7 +41,7 @@
             // cbAllUsers
             // 
             this.cbAllUsers.FormattingEnabled = true;
-            this.cbAllUsers.Location = new System.Drawing.Point(193, 274);
+            this.cbAllUsers.Location = new System.Drawing.Point(193, 322);
             this.cbAllUsers.Name = "cbAllUsers";
             this.cbAllUsers.Size = new System.Drawing.Size(431, 24);
             this.cbAllUsers.TabIndex = 0;
@@ -49,7 +49,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(187, 74);
+            this.label1.Location = new System.Drawing.Point(243, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 16);
             this.label1.TabIndex = 1;
@@ -64,43 +64,45 @@
             // 
             // btnNewUser
             // 
-            this.btnNewUser.Location = new System.Drawing.Point(193, 357);
+            this.btnNewUser.Location = new System.Drawing.Point(340, 375);
             this.btnNewUser.Name = "btnNewUser";
-            this.btnNewUser.Size = new System.Drawing.Size(105, 42);
+            this.btnNewUser.Size = new System.Drawing.Size(108, 46);
             this.btnNewUser.TabIndex = 3;
             this.btnNewUser.Text = "New User";
             this.btnNewUser.UseVisualStyleBackColor = true;
+            this.btnNewUser.Click += new System.EventHandler(this.btnNewEmployee_Click);
             // 
             // cbDivisionSearch
             // 
             this.cbDivisionSearch.FormattingEnabled = true;
-            this.cbDivisionSearch.Location = new System.Drawing.Point(246, 119);
+            this.cbDivisionSearch.Location = new System.Drawing.Point(243, 147);
             this.cbDivisionSearch.Name = "cbDivisionSearch";
             this.cbDivisionSearch.Size = new System.Drawing.Size(263, 24);
             this.cbDivisionSearch.TabIndex = 4;
             // 
-            // button2
+            // btnSearch
             // 
-            this.button2.Location = new System.Drawing.Point(246, 165);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 34);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(243, 200);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(105, 46);
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(187, 122);
+            this.label2.Location = new System.Drawing.Point(243, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 16);
+            this.label2.Size = new System.Drawing.Size(80, 16);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Division:";
+            this.label2.Text = "Department:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(190, 241);
+            this.label3.Location = new System.Drawing.Point(190, 283);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 7;
@@ -113,7 +115,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.cbDivisionSearch);
             this.Controls.Add(this.btnNewUser);
             this.Controls.Add(this.txtSearch);
@@ -133,7 +135,7 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnNewUser;
         private System.Windows.Forms.ComboBox cbDivisionSearch;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }

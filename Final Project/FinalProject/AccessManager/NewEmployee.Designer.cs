@@ -1,6 +1,6 @@
 ﻿namespace AccessManager
 {
-    partial class NewUser
+    partial class NewEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -48,6 +48,10 @@
             this.rbEtShop = new System.Windows.Forms.RadioButton();
             this.rbWeapons = new System.Windows.Forms.RadioButton();
             this.gbCommon = new System.Windows.Forms.GroupBox();
+            this.cbGym = new System.Windows.Forms.CheckBox();
+            this.cbLoading = new System.Windows.Forms.CheckBox();
+            this.cbAll = new System.Windows.Forms.CheckBox();
+            this.cbTraining = new System.Windows.Forms.CheckBox();
             this.cbHobbyShop = new System.Windows.Forms.CheckBox();
             this.cbBarracks = new System.Windows.Forms.CheckBox();
             this.cbDayCare = new System.Windows.Forms.CheckBox();
@@ -72,33 +76,29 @@
             this.rbIntel = new System.Windows.Forms.RadioButton();
             this.rbComms = new System.Windows.Forms.RadioButton();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.cbTraining = new System.Windows.Forms.CheckBox();
-            this.cbAll = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cbLoading = new System.Windows.Forms.CheckBox();
-            this.pbIdPhoto = new System.Windows.Forms.PictureBox();
-            this.cbArmory = new System.Windows.Forms.CheckBox();
-            this.cbComms = new System.Windows.Forms.CheckBox();
-            this.cbConfRm = new System.Windows.Forms.CheckBox();
-            this.cbVehicles = new System.Windows.Forms.CheckBox();
-            this.cbRecords = new System.Windows.Forms.CheckBox();
-            this.cbPersonnel = new System.Windows.Forms.CheckBox();
-            this.cbSecureConf = new System.Windows.Forms.CheckBox();
-            this.cbStorage = new System.Windows.Forms.CheckBox();
-            this.cbServerRm = new System.Windows.Forms.CheckBox();
-            this.cbAccounting = new System.Windows.Forms.CheckBox();
-            this.cbElectrical = new System.Windows.Forms.CheckBox();
-            this.cbHvac = new System.Windows.Forms.CheckBox();
+            this.cbSickBay = new System.Windows.Forms.CheckBox();
+            this.cbIntel = new System.Windows.Forms.CheckBox();
+            this.cbHangar = new System.Windows.Forms.CheckBox();
+            this.cbNetwork = new System.Windows.Forms.CheckBox();
+            this.cbControl = new System.Windows.Forms.CheckBox();
+            this.cbMachine = new System.Windows.Forms.CheckBox();
+            this.cbElexShop = new System.Windows.Forms.CheckBox();
             this.cbCarpentry = new System.Windows.Forms.CheckBox();
             this.cbWeldShop = new System.Windows.Forms.CheckBox();
-            this.cbGym = new System.Windows.Forms.CheckBox();
-            this.cbElexShop = new System.Windows.Forms.CheckBox();
-            this.cbMachine = new System.Windows.Forms.CheckBox();
-            this.cbControl = new System.Windows.Forms.CheckBox();
-            this.cbNetwork = new System.Windows.Forms.CheckBox();
-            this.cbHangar = new System.Windows.Forms.CheckBox();
-            this.cbIntel = new System.Windows.Forms.CheckBox();
-            this.cbSickBay = new System.Windows.Forms.CheckBox();
+            this.cbHvac = new System.Windows.Forms.CheckBox();
+            this.cbElectrical = new System.Windows.Forms.CheckBox();
+            this.cbAccounting = new System.Windows.Forms.CheckBox();
+            this.cbServerRm = new System.Windows.Forms.CheckBox();
+            this.cbStorage = new System.Windows.Forms.CheckBox();
+            this.cbSecureConf = new System.Windows.Forms.CheckBox();
+            this.cbPersonnel = new System.Windows.Forms.CheckBox();
+            this.cbRecords = new System.Windows.Forms.CheckBox();
+            this.cbVehicles = new System.Windows.Forms.CheckBox();
+            this.cbConfRm = new System.Windows.Forms.CheckBox();
+            this.cbComms = new System.Windows.Forms.CheckBox();
+            this.cbArmory = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pbIdPhoto = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.gbCombat.SuspendLayout();
             this.gbCommon.SuspendLayout();
@@ -338,6 +338,46 @@
             this.gbCommon.TabIndex = 10;
             this.gbCommon.TabStop = false;
             this.gbCommon.Text = "Common Areas";
+            // 
+            // cbGym
+            // 
+            this.cbGym.AutoSize = true;
+            this.cbGym.Location = new System.Drawing.Point(149, 135);
+            this.cbGym.Name = "cbGym";
+            this.cbGym.Size = new System.Drawing.Size(100, 20);
+            this.cbGym.TabIndex = 11;
+            this.cbGym.Text = "Gymnasium";
+            this.cbGym.UseVisualStyleBackColor = true;
+            // 
+            // cbLoading
+            // 
+            this.cbLoading.AutoSize = true;
+            this.cbLoading.Location = new System.Drawing.Point(295, 99);
+            this.cbLoading.Name = "cbLoading";
+            this.cbLoading.Size = new System.Drawing.Size(113, 20);
+            this.cbLoading.TabIndex = 10;
+            this.cbLoading.Text = "Loading Dock";
+            this.cbLoading.UseVisualStyleBackColor = true;
+            // 
+            // cbAll
+            // 
+            this.cbAll.AutoSize = true;
+            this.cbAll.Location = new System.Drawing.Point(14, 27);
+            this.cbAll.Name = "cbAll";
+            this.cbAll.Size = new System.Drawing.Size(85, 20);
+            this.cbAll.TabIndex = 0;
+            this.cbAll.Text = "Select All";
+            this.cbAll.UseVisualStyleBackColor = true;
+            // 
+            // cbTraining
+            // 
+            this.cbTraining.AutoSize = true;
+            this.cbTraining.Location = new System.Drawing.Point(295, 27);
+            this.cbTraining.Name = "cbTraining";
+            this.cbTraining.Size = new System.Drawing.Size(118, 20);
+            this.cbTraining.TabIndex = 9;
+            this.cbTraining.Text = "Training Room";
+            this.cbTraining.UseVisualStyleBackColor = true;
             // 
             // cbHobbyShop
             // 
@@ -621,173 +661,75 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Division Areas";
             // 
-            // cbTraining
+            // cbSickBay
             // 
-            this.cbTraining.AutoSize = true;
-            this.cbTraining.Location = new System.Drawing.Point(295, 27);
-            this.cbTraining.Name = "cbTraining";
-            this.cbTraining.Size = new System.Drawing.Size(118, 20);
-            this.cbTraining.TabIndex = 9;
-            this.cbTraining.Text = "Training Room";
-            this.cbTraining.UseVisualStyleBackColor = true;
+            this.cbSickBay.AutoSize = true;
+            this.cbSickBay.Location = new System.Drawing.Point(295, 246);
+            this.cbSickBay.Name = "cbSickBay";
+            this.cbSickBay.Size = new System.Drawing.Size(82, 20);
+            this.cbSickBay.TabIndex = 21;
+            this.cbSickBay.Text = "Sick Bay";
+            this.cbSickBay.UseVisualStyleBackColor = true;
             // 
-            // cbAll
+            // cbIntel
             // 
-            this.cbAll.AutoSize = true;
-            this.cbAll.Location = new System.Drawing.Point(14, 27);
-            this.cbAll.Name = "cbAll";
-            this.cbAll.Size = new System.Drawing.Size(85, 20);
-            this.cbAll.TabIndex = 0;
-            this.cbAll.Text = "Select All";
-            this.cbAll.UseVisualStyleBackColor = true;
+            this.cbIntel.AutoSize = true;
+            this.cbIntel.Location = new System.Drawing.Point(134, 20);
+            this.cbIntel.Name = "cbIntel";
+            this.cbIntel.Size = new System.Drawing.Size(108, 20);
+            this.cbIntel.TabIndex = 20;
+            this.cbIntel.Text = "Intel/Analysis";
+            this.cbIntel.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // cbHangar
             // 
-            this.button1.Location = new System.Drawing.Point(455, 544);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 48);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Create Employee";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cbHangar.AutoSize = true;
+            this.cbHangar.Location = new System.Drawing.Point(295, 205);
+            this.cbHangar.Name = "cbHangar";
+            this.cbHangar.Size = new System.Drawing.Size(74, 20);
+            this.cbHangar.TabIndex = 19;
+            this.cbHangar.Text = "Hangar";
+            this.cbHangar.UseVisualStyleBackColor = true;
             // 
-            // cbLoading
+            // cbNetwork
             // 
-            this.cbLoading.AutoSize = true;
-            this.cbLoading.Location = new System.Drawing.Point(295, 99);
-            this.cbLoading.Name = "cbLoading";
-            this.cbLoading.Size = new System.Drawing.Size(113, 20);
-            this.cbLoading.TabIndex = 10;
-            this.cbLoading.Text = "Loading Dock";
-            this.cbLoading.UseVisualStyleBackColor = true;
+            this.cbNetwork.AutoSize = true;
+            this.cbNetwork.Location = new System.Drawing.Point(296, 20);
+            this.cbNetwork.Name = "cbNetwork";
+            this.cbNetwork.Size = new System.Drawing.Size(126, 20);
+            this.cbNetwork.TabIndex = 18;
+            this.cbNetwork.Text = "Network Closets";
+            this.cbNetwork.UseVisualStyleBackColor = true;
             // 
-            // pbIdPhoto
+            // cbControl
             // 
-            this.pbIdPhoto.Location = new System.Drawing.Point(33, 12);
-            this.pbIdPhoto.Name = "pbIdPhoto";
-            this.pbIdPhoto.Size = new System.Drawing.Size(178, 188);
-            this.pbIdPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbIdPhoto.TabIndex = 0;
-            this.pbIdPhoto.TabStop = false;
+            this.cbControl.AutoSize = true;
+            this.cbControl.Location = new System.Drawing.Point(296, 55);
+            this.cbControl.Name = "cbControl";
+            this.cbControl.Size = new System.Drawing.Size(112, 20);
+            this.cbControl.TabIndex = 15;
+            this.cbControl.Text = "Control Tower";
+            this.cbControl.UseVisualStyleBackColor = true;
             // 
-            // cbArmory
+            // cbMachine
             // 
-            this.cbArmory.AutoSize = true;
-            this.cbArmory.Location = new System.Drawing.Point(16, 22);
-            this.cbArmory.Name = "cbArmory";
-            this.cbArmory.Size = new System.Drawing.Size(72, 20);
-            this.cbArmory.TabIndex = 0;
-            this.cbArmory.Text = "Armory";
-            this.cbArmory.UseVisualStyleBackColor = true;
+            this.cbMachine.AutoSize = true;
+            this.cbMachine.Location = new System.Drawing.Point(134, 205);
+            this.cbMachine.Name = "cbMachine";
+            this.cbMachine.Size = new System.Drawing.Size(115, 20);
+            this.cbMachine.TabIndex = 15;
+            this.cbMachine.Text = "Machine Shop";
+            this.cbMachine.UseVisualStyleBackColor = true;
             // 
-            // cbComms
+            // cbElexShop
             // 
-            this.cbComms.AutoSize = true;
-            this.cbComms.Location = new System.Drawing.Point(292, 129);
-            this.cbComms.Name = "cbComms";
-            this.cbComms.Size = new System.Drawing.Size(115, 20);
-            this.cbComms.TabIndex = 1;
-            this.cbComms.Text = "Comms Room";
-            this.cbComms.UseVisualStyleBackColor = true;
-            // 
-            // cbConfRm
-            // 
-            this.cbConfRm.AutoSize = true;
-            this.cbConfRm.Location = new System.Drawing.Point(134, 55);
-            this.cbConfRm.Name = "cbConfRm";
-            this.cbConfRm.Size = new System.Drawing.Size(138, 20);
-            this.cbConfRm.TabIndex = 2;
-            this.cbConfRm.Text = "Conference Room";
-            this.cbConfRm.UseVisualStyleBackColor = true;
-            // 
-            // cbVehicles
-            // 
-            this.cbVehicles.AutoSize = true;
-            this.cbVehicles.Location = new System.Drawing.Point(134, 246);
-            this.cbVehicles.Name = "cbVehicles";
-            this.cbVehicles.Size = new System.Drawing.Size(101, 20);
-            this.cbVehicles.TabIndex = 3;
-            this.cbVehicles.Text = "Vehicle Bay";
-            this.cbVehicles.UseVisualStyleBackColor = true;
-            // 
-            // cbRecords
-            // 
-            this.cbRecords.AutoSize = true;
-            this.cbRecords.Location = new System.Drawing.Point(16, 55);
-            this.cbRecords.Name = "cbRecords";
-            this.cbRecords.Size = new System.Drawing.Size(81, 20);
-            this.cbRecords.TabIndex = 4;
-            this.cbRecords.Text = "Records";
-            this.cbRecords.UseVisualStyleBackColor = true;
-            // 
-            // cbPersonnel
-            // 
-            this.cbPersonnel.AutoSize = true;
-            this.cbPersonnel.Location = new System.Drawing.Point(17, 164);
-            this.cbPersonnel.Name = "cbPersonnel";
-            this.cbPersonnel.Size = new System.Drawing.Size(90, 20);
-            this.cbPersonnel.TabIndex = 5;
-            this.cbPersonnel.Text = "Personnel";
-            this.cbPersonnel.UseVisualStyleBackColor = true;
-            // 
-            // cbSecureConf
-            // 
-            this.cbSecureConf.AutoSize = true;
-            this.cbSecureConf.Location = new System.Drawing.Point(134, 93);
-            this.cbSecureConf.Name = "cbSecureConf";
-            this.cbSecureConf.Size = new System.Drawing.Size(145, 20);
-            this.cbSecureConf.TabIndex = 6;
-            this.cbSecureConf.Text = "Secure Conf. Room";
-            this.cbSecureConf.UseVisualStyleBackColor = true;
-            // 
-            // cbStorage
-            // 
-            this.cbStorage.AutoSize = true;
-            this.cbStorage.Location = new System.Drawing.Point(292, 164);
-            this.cbStorage.Name = "cbStorage";
-            this.cbStorage.Size = new System.Drawing.Size(77, 20);
-            this.cbStorage.TabIndex = 7;
-            this.cbStorage.Text = "Storage";
-            this.cbStorage.UseVisualStyleBackColor = true;
-            // 
-            // cbServerRm
-            // 
-            this.cbServerRm.AutoSize = true;
-            this.cbServerRm.Location = new System.Drawing.Point(292, 93);
-            this.cbServerRm.Name = "cbServerRm";
-            this.cbServerRm.Size = new System.Drawing.Size(109, 20);
-            this.cbServerRm.TabIndex = 8;
-            this.cbServerRm.Text = "Server Room";
-            this.cbServerRm.UseVisualStyleBackColor = true;
-            // 
-            // cbAccounting
-            // 
-            this.cbAccounting.AutoSize = true;
-            this.cbAccounting.Location = new System.Drawing.Point(17, 129);
-            this.cbAccounting.Name = "cbAccounting";
-            this.cbAccounting.Size = new System.Drawing.Size(95, 20);
-            this.cbAccounting.TabIndex = 9;
-            this.cbAccounting.Text = "Accounting";
-            this.cbAccounting.UseVisualStyleBackColor = true;
-            // 
-            // cbElectrical
-            // 
-            this.cbElectrical.AutoSize = true;
-            this.cbElectrical.Location = new System.Drawing.Point(134, 129);
-            this.cbElectrical.Name = "cbElectrical";
-            this.cbElectrical.Size = new System.Drawing.Size(124, 20);
-            this.cbElectrical.TabIndex = 10;
-            this.cbElectrical.Text = "Electrical Room";
-            this.cbElectrical.UseVisualStyleBackColor = true;
-            // 
-            // cbHvac
-            // 
-            this.cbHvac.AutoSize = true;
-            this.cbHvac.Location = new System.Drawing.Point(16, 93);
-            this.cbHvac.Name = "cbHvac";
-            this.cbHvac.Size = new System.Drawing.Size(66, 20);
-            this.cbHvac.TabIndex = 11;
-            this.cbHvac.Text = "HVAC";
-            this.cbHvac.UseVisualStyleBackColor = true;
+            this.cbElexShop.AutoSize = true;
+            this.cbElexShop.Location = new System.Drawing.Point(17, 246);
+            this.cbElexShop.Name = "cbElexShop";
+            this.cbElexShop.Size = new System.Drawing.Size(98, 20);
+            this.cbElexShop.TabIndex = 17;
+            this.cbElexShop.Text = "ET/IT Shop";
+            this.cbElexShop.UseVisualStyleBackColor = true;
             // 
             // cbCarpentry
             // 
@@ -809,87 +751,145 @@
             this.cbWeldShop.Text = "Weld Shop";
             this.cbWeldShop.UseVisualStyleBackColor = true;
             // 
-            // cbGym
+            // cbHvac
             // 
-            this.cbGym.AutoSize = true;
-            this.cbGym.Location = new System.Drawing.Point(149, 135);
-            this.cbGym.Name = "cbGym";
-            this.cbGym.Size = new System.Drawing.Size(100, 20);
-            this.cbGym.TabIndex = 11;
-            this.cbGym.Text = "Gymnasium";
-            this.cbGym.UseVisualStyleBackColor = true;
+            this.cbHvac.AutoSize = true;
+            this.cbHvac.Location = new System.Drawing.Point(16, 93);
+            this.cbHvac.Name = "cbHvac";
+            this.cbHvac.Size = new System.Drawing.Size(66, 20);
+            this.cbHvac.TabIndex = 11;
+            this.cbHvac.Text = "HVAC";
+            this.cbHvac.UseVisualStyleBackColor = true;
             // 
-            // cbElexShop
+            // cbElectrical
             // 
-            this.cbElexShop.AutoSize = true;
-            this.cbElexShop.Location = new System.Drawing.Point(17, 246);
-            this.cbElexShop.Name = "cbElexShop";
-            this.cbElexShop.Size = new System.Drawing.Size(98, 20);
-            this.cbElexShop.TabIndex = 17;
-            this.cbElexShop.Text = "ET/IT Shop";
-            this.cbElexShop.UseVisualStyleBackColor = true;
+            this.cbElectrical.AutoSize = true;
+            this.cbElectrical.Location = new System.Drawing.Point(134, 129);
+            this.cbElectrical.Name = "cbElectrical";
+            this.cbElectrical.Size = new System.Drawing.Size(124, 20);
+            this.cbElectrical.TabIndex = 10;
+            this.cbElectrical.Text = "Electrical Room";
+            this.cbElectrical.UseVisualStyleBackColor = true;
             // 
-            // cbMachine
+            // cbAccounting
             // 
-            this.cbMachine.AutoSize = true;
-            this.cbMachine.Location = new System.Drawing.Point(134, 205);
-            this.cbMachine.Name = "cbMachine";
-            this.cbMachine.Size = new System.Drawing.Size(115, 20);
-            this.cbMachine.TabIndex = 15;
-            this.cbMachine.Text = "Machine Shop";
-            this.cbMachine.UseVisualStyleBackColor = true;
+            this.cbAccounting.AutoSize = true;
+            this.cbAccounting.Location = new System.Drawing.Point(17, 129);
+            this.cbAccounting.Name = "cbAccounting";
+            this.cbAccounting.Size = new System.Drawing.Size(95, 20);
+            this.cbAccounting.TabIndex = 9;
+            this.cbAccounting.Text = "Accounting";
+            this.cbAccounting.UseVisualStyleBackColor = true;
             // 
-            // cbControl
+            // cbServerRm
             // 
-            this.cbControl.AutoSize = true;
-            this.cbControl.Location = new System.Drawing.Point(292, 55);
-            this.cbControl.Name = "cbControl";
-            this.cbControl.Size = new System.Drawing.Size(112, 20);
-            this.cbControl.TabIndex = 15;
-            this.cbControl.Text = "Control Tower";
-            this.cbControl.UseVisualStyleBackColor = true;
+            this.cbServerRm.AutoSize = true;
+            this.cbServerRm.Location = new System.Drawing.Point(296, 93);
+            this.cbServerRm.Name = "cbServerRm";
+            this.cbServerRm.Size = new System.Drawing.Size(109, 20);
+            this.cbServerRm.TabIndex = 8;
+            this.cbServerRm.Text = "Server Room";
+            this.cbServerRm.UseVisualStyleBackColor = true;
             // 
-            // cbNetwork
+            // cbStorage
             // 
-            this.cbNetwork.AutoSize = true;
-            this.cbNetwork.Location = new System.Drawing.Point(292, 20);
-            this.cbNetwork.Name = "cbNetwork";
-            this.cbNetwork.Size = new System.Drawing.Size(126, 20);
-            this.cbNetwork.TabIndex = 18;
-            this.cbNetwork.Text = "Network Closets";
-            this.cbNetwork.UseVisualStyleBackColor = true;
+            this.cbStorage.AutoSize = true;
+            this.cbStorage.Location = new System.Drawing.Point(296, 164);
+            this.cbStorage.Name = "cbStorage";
+            this.cbStorage.Size = new System.Drawing.Size(77, 20);
+            this.cbStorage.TabIndex = 7;
+            this.cbStorage.Text = "Storage";
+            this.cbStorage.UseVisualStyleBackColor = true;
             // 
-            // cbHangar
+            // cbSecureConf
             // 
-            this.cbHangar.AutoSize = true;
-            this.cbHangar.Location = new System.Drawing.Point(292, 205);
-            this.cbHangar.Name = "cbHangar";
-            this.cbHangar.Size = new System.Drawing.Size(74, 20);
-            this.cbHangar.TabIndex = 19;
-            this.cbHangar.Text = "Hangar";
-            this.cbHangar.UseVisualStyleBackColor = true;
+            this.cbSecureConf.AutoSize = true;
+            this.cbSecureConf.Location = new System.Drawing.Point(134, 93);
+            this.cbSecureConf.Name = "cbSecureConf";
+            this.cbSecureConf.Size = new System.Drawing.Size(145, 20);
+            this.cbSecureConf.TabIndex = 6;
+            this.cbSecureConf.Text = "Secure Conf. Room";
+            this.cbSecureConf.UseVisualStyleBackColor = true;
             // 
-            // cbIntel
+            // cbPersonnel
             // 
-            this.cbIntel.AutoSize = true;
-            this.cbIntel.Location = new System.Drawing.Point(134, 20);
-            this.cbIntel.Name = "cbIntel";
-            this.cbIntel.Size = new System.Drawing.Size(108, 20);
-            this.cbIntel.TabIndex = 20;
-            this.cbIntel.Text = "Intel/Analysis";
-            this.cbIntel.UseVisualStyleBackColor = true;
+            this.cbPersonnel.AutoSize = true;
+            this.cbPersonnel.Location = new System.Drawing.Point(17, 164);
+            this.cbPersonnel.Name = "cbPersonnel";
+            this.cbPersonnel.Size = new System.Drawing.Size(90, 20);
+            this.cbPersonnel.TabIndex = 5;
+            this.cbPersonnel.Text = "Personnel";
+            this.cbPersonnel.UseVisualStyleBackColor = true;
             // 
-            // cbSickBay
+            // cbRecords
             // 
-            this.cbSickBay.AutoSize = true;
-            this.cbSickBay.Location = new System.Drawing.Point(290, 246);
-            this.cbSickBay.Name = "cbSickBay";
-            this.cbSickBay.Size = new System.Drawing.Size(82, 20);
-            this.cbSickBay.TabIndex = 21;
-            this.cbSickBay.Text = "Sick Bay";
-            this.cbSickBay.UseVisualStyleBackColor = true;
+            this.cbRecords.AutoSize = true;
+            this.cbRecords.Location = new System.Drawing.Point(16, 55);
+            this.cbRecords.Name = "cbRecords";
+            this.cbRecords.Size = new System.Drawing.Size(81, 20);
+            this.cbRecords.TabIndex = 4;
+            this.cbRecords.Text = "Records";
+            this.cbRecords.UseVisualStyleBackColor = true;
             // 
-            // NewUser
+            // cbVehicles
+            // 
+            this.cbVehicles.AutoSize = true;
+            this.cbVehicles.Location = new System.Drawing.Point(134, 246);
+            this.cbVehicles.Name = "cbVehicles";
+            this.cbVehicles.Size = new System.Drawing.Size(101, 20);
+            this.cbVehicles.TabIndex = 3;
+            this.cbVehicles.Text = "Vehicle Bay";
+            this.cbVehicles.UseVisualStyleBackColor = true;
+            // 
+            // cbConfRm
+            // 
+            this.cbConfRm.AutoSize = true;
+            this.cbConfRm.Location = new System.Drawing.Point(134, 55);
+            this.cbConfRm.Name = "cbConfRm";
+            this.cbConfRm.Size = new System.Drawing.Size(138, 20);
+            this.cbConfRm.TabIndex = 2;
+            this.cbConfRm.Text = "Conference Room";
+            this.cbConfRm.UseVisualStyleBackColor = true;
+            // 
+            // cbComms
+            // 
+            this.cbComms.AutoSize = true;
+            this.cbComms.Location = new System.Drawing.Point(296, 129);
+            this.cbComms.Name = "cbComms";
+            this.cbComms.Size = new System.Drawing.Size(115, 20);
+            this.cbComms.TabIndex = 1;
+            this.cbComms.Text = "Comms Room";
+            this.cbComms.UseVisualStyleBackColor = true;
+            // 
+            // cbArmory
+            // 
+            this.cbArmory.AutoSize = true;
+            this.cbArmory.Location = new System.Drawing.Point(16, 22);
+            this.cbArmory.Name = "cbArmory";
+            this.cbArmory.Size = new System.Drawing.Size(72, 20);
+            this.cbArmory.TabIndex = 0;
+            this.cbArmory.Text = "Armory";
+            this.cbArmory.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(455, 544);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 48);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Create Employee";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pbIdPhoto
+            // 
+            this.pbIdPhoto.Location = new System.Drawing.Point(33, 12);
+            this.pbIdPhoto.Name = "pbIdPhoto";
+            this.pbIdPhoto.Size = new System.Drawing.Size(178, 188);
+            this.pbIdPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIdPhoto.TabIndex = 0;
+            this.pbIdPhoto.TabStop = false;
+            // 
+            // NewEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -909,7 +909,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbIdPhoto);
-            this.Name = "NewUser";
+            this.Name = "NewEmployee";
             this.Text = "NewUser";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
