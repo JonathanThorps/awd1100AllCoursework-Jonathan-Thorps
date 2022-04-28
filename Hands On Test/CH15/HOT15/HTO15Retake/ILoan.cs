@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTO15Retake
 {
-    public abstract class ILoan
+    public class ILoan
     {
         public string Name { get; }
         public string Type { get; }

@@ -6,23 +6,26 @@ using System.Threading.Tasks;
 
 namespace HTO15Retake
 {
-    public abstract class ShortTerm:ILoan
+    public class ShortTermLoan:ILoan
     {
         private string _name;
-        private double _balance;
-
-        public ShortTerm(string name,double balance)
+        private string _shortTerm;
+        private double _amount;
+        
+        public ILoan ShortTerm(string name,string shortTerm,double amount)
         {
-            _name = name;
-            _balance = balance;
+            _name = Name;
+            _shortTerm = Type;
+            _amount = Balance;
+            return this;
         }
-        public double MakePayment(double balance)
+        public double MakePayment(double amount)
         {
-            return balance - 450;
+            return amount = amount - 450;
         }
-        public double ApplyInterest(double balance, double interest)
+        public double ApplyInterest(double amount)
         {
-             return interest = (balance * .10) + balance;
+            return amount = (amount * .10) + amount;
         }
     }
 }

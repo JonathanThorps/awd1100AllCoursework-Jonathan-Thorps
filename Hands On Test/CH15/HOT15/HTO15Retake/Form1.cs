@@ -33,20 +33,44 @@ namespace HTO15Retake
 
             if (rbLongTerm.Checked)
             {
-                LongTerm newLong = LongTerm();
+                LongTermLoan longTermLoan = new LongTermLoan();
             }
             if(rbShortTerm.Checked)
             {
-                ShortTerm newShort = ShortTerm();
+                ShortTermLoan shortTermLoan = new ShortTermLoan();
             }
         }
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            lblName.Text = txtName.Text;
-            lblLoan.Text = txtAmount.Text;
-            lblPrinciple.Text = "After the last payment the loan is down to ";
-            lblBalance.Text = "After the last interest accumulation the loan is now ";
+            if (rbLongTerm.Checked)
+            {
+                lblName.Text = txtName.Text;
+                lblLoan.Text = txtAmount.Text;
+
+                //LongTermLoan.MakePayment();
+                {
+                    lblPrinciple.Text = "After the last payment the loan is down to";
+                }
+                //LongTermLoan.ApplyInterest();
+                {
+                    lblBalance.Text = "After the last interest accumulation the loan is now";
+                }
+            }
+            if (rbShortTerm.Checked)
+            {
+                lblName.Text = txtName.Text;
+                lblLoan.Text = txtAmount.Text;
+
+                //ShortTermLoan.MakePayment();
+                {
+                    lblPrinciple.Text = "After the last payment the loan is down to ";
+                }
+                //ShortTermLoan.ApplyInterest();
+                {
+                    lblBalance.Text = "After the last interest accumulation the loan is now ";
+                }             
+            }
         }
     }
 }
