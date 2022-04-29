@@ -122,7 +122,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbAllUsers);
             this.Name = "UserManagement";
-            this.Text = "UserManagement";
             this.ResumeLayout(false);
             this.PerformLayout();
 

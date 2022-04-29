@@ -13,7 +13,7 @@ namespace AccessManager
         private string _lastName;
         private int _employeeId;
         private Image _image;
-        Department _department;
+        private Department _department;
 
         public Employee(string firstName,string lastName,int employeeId,Image Image,Department department)
         {
