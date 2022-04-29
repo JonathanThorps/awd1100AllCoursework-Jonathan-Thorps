@@ -142,5 +142,8 @@
   <ItemGroup>
     <None Include="Resources\weaver.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tf_141.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

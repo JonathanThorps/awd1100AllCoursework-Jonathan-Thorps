@@ -183,6 +183,16 @@ namespace AccessManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tf_141 {
+            get {
+                object obj = ResourceManager.GetObject("tf_141", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap weaver {
             get {
                 object obj = ResourceManager.GetObject("weaver", resourceCulture);
