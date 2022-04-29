@@ -12,11 +12,9 @@ namespace HTO15Retake
         private string _longTerm;
         private double _amount;
 
-        public ILoan LongTerm(string name,string longTerm,double amount)
+        public ILoan LongTerm(string longTerm)
         {
-            _name = Name;
-            _longTerm = Type;
-            _amount = Balance;
+            longTerm = Type;
             return this;
         }
         public double MakePayment(double amount)

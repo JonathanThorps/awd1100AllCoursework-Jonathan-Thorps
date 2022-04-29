@@ -8,15 +8,11 @@ namespace HTO15Retake
 {
     public class ShortTermLoan:ILoan
     {
-        private string _name;
         private string _shortTerm;
-        private double _amount;
         
-        public ILoan ShortTerm(string name,string shortTerm,double amount)
+        public ILoan ShortTerm(string shortTerm)
         {
-            _name = Name;
-            _shortTerm = Type;
-            _amount = Balance;
+            shortTerm = Type;
             return this;
         }
         public double MakePayment(double amount)
