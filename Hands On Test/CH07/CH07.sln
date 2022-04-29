@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EX1", "EX1\EX1.csproj", "{00C39BE0-8469-43A1-9B6F-717437095F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arithmetic", "Arithmetic\Arithmetic.csproj", "{FD72A2E5-B639-4225-9DE2-D4E590ACFDF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00C39BE0-8469-43A1-9B6F-717437095F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C39BE0-8469-43A1-9B6F-717437095F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C39BE0-8469-43A1-9B6F-717437095F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C39BE0-8469-43A1-9B6F-717437095F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD72A2E5-B639-4225-9DE2-D4E590ACFDF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD72A2E5-B639-4225-9DE2-D4E590ACFDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD72A2E5-B639-4225-9DE2-D4E590ACFDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD72A2E5-B639-4225-9DE2-D4E590ACFDF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F63CC14A-1789-4C0F-A049-BD1C542B2248}
+	EndGlobalSection
+EndGlobal
